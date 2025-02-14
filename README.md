@@ -1,3 +1,3 @@
 # 我的个人主页
 
-[Visit](https://thejinchao.github.io)
+[thejinchao.github.io](https://thejinchao.github.io)
