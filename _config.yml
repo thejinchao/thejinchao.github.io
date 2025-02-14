@@ -7,3 +7,6 @@ header_pages:
 
 minima:
   skin: classic
+
+markdown: kramdown
+mathjax: true
