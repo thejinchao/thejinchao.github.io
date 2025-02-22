@@ -14,4 +14,4 @@ jobs:
         TARGET_REPO: thejinchao/thejinchao.github.io
         TARGET_BRANCH: gh_pages
         BUILD_SCRIPT: yarn && yarn build
-        BUILD_DIR: dist/
+        BUILD_DIR: docs/.vuepress/dist/
