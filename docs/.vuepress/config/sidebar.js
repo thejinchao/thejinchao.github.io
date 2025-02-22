@@ -56,15 +56,78 @@ module.exports = [
 		children: [
 			{
 				text: '数学相关',
-				
 				collapsible: true,
 				children: [
-					{text: '常用数学符号', 	link: '/math/symbol'},
-					{text: '群', 			link: '/math/group'},
-					{text: '数论（一）', 		link: '/math/number_theory_1'},
-					{text: '数论（二）',		link: '/math/number_theory_2'},
-					{text: '数论（三）', 		link: '/math/number_theory_3'},
-					{text: '概率', 			link: '/math/probability'}
+					{text: '常用数学符号', 	link: '/note/math/symbol.md'},
+					{text: '群', 			link: '/note/math/group.md'},
+					{text: '数论（一）', 		link: '/note/math/number_theory_1.md'},
+					{text: '数论（二）',		link: '/note/math/number_theory_2.md'},
+					{text: '数论（三）', 		link: '/note/math/number_theory_3.md'},
+					{text: '概率', 			link: '/note/math/probability.md'}
+				]
+			},
+			{
+				text: '密码学',
+				collapsible: true,
+				children: [
+					{text: 'RSA', 			link: '/note/cryptography/rsa'},
+					{text: '抛币协议', 		link: '/note/cryptography/flip_coin'},
+					{text: '智能扑克协议', 	link: '/note/cryptography/mental_poker'}
+				]
+			},
+			{
+				text: '图形学',
+				collapsible: true,
+				children: [
+					{
+						text: '数学基础',
+						collapsible: true,
+						children: [
+							{text: '矢量', link: '/note/graphics/math/math_01'},
+							{text: '矩阵', link: '/note/graphics/math/math_02'},
+							{text: '立体角', link: '/note/graphics/math/math_03'},
+							{text: '几何变换(一)', link: '/note/graphics/math/transform_01'},
+							{text: '几何变换(二)', link: '/note/graphics/math/transform_02'},
+							{text: '法线变换', link: '/note/graphics/math/transform_03'},
+							{text: '摄像机变换', link: '/note/graphics/math/transform_04'}
+						]
+					},
+					{
+						text: '光照模型',
+						collapsible: true,
+						children: [
+							{text: '光度学', link: '/note/graphics/illumination_model/luminosity/luminosity'},
+							{text: '双向反射分布函数\(BRDF\)', link: '/note/graphics/illumination_model/BRDF/BRDF'},
+							{text: '微平面理论(一)', link: '/note/graphics/illumination_model/microfacets/microfacets_1'},
+							{text: '微平面理论(二)', link: '/note/graphics/illumination_model/microfacets/microfacets_2'},
+							{text: '微平面理论(三)', link: '/note/graphics/illumination_model/microfacets/microfacets_3', },
+							{text: '光照方程', link: '/note/graphics/illumination_model/render_function/render_function_1'}
+						]
+					},
+					{
+						text: '环境光渲染',
+						collapsible: true,
+						children: [
+							{text: '环境光渲染(一)', link: '/note/graphics/image_based_lighting/ibl_01'},
+							{text: '环境光渲染(二)', link: '/note/graphics/image_based_lighting/ibl_02'}
+						]
+					}
+				]
+			},
+			{
+				text: '编程语言',
+				collapsible: true,
+				children: [
+					{
+						text: 'JavaScript',
+						collapsible: true,
+						children: [
+							{text:'环境搭建', link:'/note/language/javascript/helloworld.md'},
+							{text:'基本语法', link:'/note/language/javascript/grammar.md'},
+							{text:'函数', link:'/note/language/javascript/function.md'},
+							{text:'对象和类', link:'/note/language/javascript/object_and_class.md'}
+						]
+					}
 				]
 			}
 		]

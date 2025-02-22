@@ -18,4 +18,8 @@
  * [Turbolink](https://github.com/thejinchao/turbolink)
 
 ## 个人笔记
- * [个人笔记](http://note.thecodeway.com)
+ * [数学相关](/note/math/)
+ * [密码学](/note/cryptography/)
+ * [图形学](/note/graphics/)
+ * 编程语言
+   * [JavaScript](/note/language/javascript/)
