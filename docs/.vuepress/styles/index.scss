@@ -1,0 +1,36 @@
+:root {
+    --code-c-text: #1f1f1f;
+    --code-c-bg: #f8f8f8;
+    --code-c-highlight-bg: rgb(51.6454545455, 60.5484848485, 78.3545454545);
+    --copy-code-c-hover: #afafaf;
+}
+
+table.gridtable {
+    border-collapse: collapse;
+    border: 1px solid #0a0a0a;
+    width: 100%;
+}
+
+table.gridtable th {
+    background-color: #cacaca;
+    border: 1px solid #3f3f3f;
+    color: #131313;
+    padding: 0px
+}
+
+table.gridtable td {
+    border: 1px solid #3f3f3f;
+    padding: 0px
+}
+
+table.invisibletable {
+    border-collapse: collapse;
+    border: 0px;
+    width: 100%;
+}
+
+table.invisibletable td {
+    border: 0px;
+    padding: 0px;
+    background-color: #ffffff;
+}

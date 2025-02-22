@@ -1,25 +1,40 @@
-const head = require('./config/head.js');
-//const plugins = require('./config/plugins.js');
-const themeConfig = require('./config/themeConfig.js');
+import { viteBundler } from '@vuepress/bundler-vite'
+import { defaultTheme } from '@vuepress/theme-default'
+import { markdownMathPlugin } from '@vuepress/plugin-markdown-math'
+import { markdownImagePlugin } from '@vuepress/plugin-markdown-image'
+import { defineUserConfig } from 'vuepress'
 
-module.exports = {
-	base: '/',
-	dest: 'dist',
-	locales: {
-	'/': {
-		title: "我的博客",
-		description: '死理性派，喜欢程序，数学，物理',
-		lang: 'zh-CN'
-	}
-	},
-	head,
-	//plugins,
-	themeConfig,
+const navbar_def = require('./config/nav.js');
+const sidebar_def = require('./config/sidebar.js');
+
+export default defineUserConfig({
+	bundler: viteBundler(),
+	theme: defaultTheme({
+		logo: 'favicon.png',
+		navbar: navbar_def,
+		sidebar: sidebar_def,
+		sidebarDepth: 4,
+	}),
+	lang : 'zh-CN',
+	title: '我的博客和笔记',
+	description: '理性派，数学，物理，程序',
+	plugins: [
+		markdownMathPlugin({
+		// options
+		}),
+		
+		markdownImagePlugin({
+			// Enable figure
+			figure: true,
+			// Enable image lazyload
+			lazyload: true,
+			// Enable image mark
+			mark: true,
+			// Enable image size
+			size: false,
+		}),
+	],
 	markdown: {
-		lineNumber: false
-	},
-	extendMarkdown: md => {
-		md.set({ breaks: true });
-		md.use(require('markdown-it-mathjax3'), {tex: {tags: 'ams'}});
+		lineNumbers: false
 	}
-}
+})
