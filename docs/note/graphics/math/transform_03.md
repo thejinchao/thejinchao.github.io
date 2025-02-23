@@ -11,7 +11,7 @@
 
 ### 7.2 法线变换矩阵
 以上图为例，设$\vec{\boldsymbol{u}}=\vec{ab}$，那么$\vec{\boldsymbol{u}}\cdot\vec{\boldsymbol{n}}=0$，用矩阵的方式表达，$\mathrm{u}=[u_x, u_y, u_z]$, $\mathrm{n}=[n_x, n_y, n_z]$，就是$\mathrm{u}\mathrm{n}^T=0$
-设从$\vec{ab}$到$\vec{a'b'}$的变换矩阵为$A$，根据转置矩阵的[基本运算规则](/graphics/math/math_02.html#_3-5-基本运算规则) ，可以得到
+设从$\vec{ab}$到$\vec{a'b'}$的变换矩阵为$A$，根据转置矩阵的[基本运算规则](/note/graphics/math/math_02.html#_3-5-基本运算规则) ，可以得到
 $$\begin{split}
 0&=\mathrm{u}\mathrm{n}^T\\
 &=\mathrm{u}(\mathrm{AA^{-1}})\mathrm{n}^T \\

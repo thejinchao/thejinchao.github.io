@@ -8,11 +8,17 @@ L_{os}(\vec{\omega_o})=\int_{\Omega}f_s(\vec{\omega_i}, \vec{\omega_o})L_i(\vec{
 $$
 同样使用蒙特卡洛进行近似积分
 $$
-\int_{\Omega}f_s(\vec{\omega_i}, \vec{\omega_o})L_i(\vec{\omega_i})(\vec{\omega}_i\vec{n})d\omega_i \approx \dfrac{1}{N}\sum_{k=1}^{N}\dfrac{f_s(\vec{\omega_k}, \vec{\omega_o})L_i(\vec{\omega_k})(\vec{\omega_k}\cdot\vec{n})}{\text{pdf}(\vec{\omega_k})}
+\begin{aligned}
+&\int_{\Omega}f_s(\vec{\omega_i}, \vec{\omega_o})L_i(\vec{\omega_i})(\vec{\omega}_i\vec{n})d\omega_i \\
+\approx &\dfrac{1}{N}\sum_{k=1}^{N}\dfrac{f_s(\vec{\omega_k}, \vec{\omega_o})L_i(\vec{\omega_k})(\vec{\omega_k}\cdot\vec{n})}{\text{pdf}(\vec{\omega_k})}
+\end{aligned}
 $$
 EPIC在此基础上提出了一种近似[计算方法](http://blog.selfshadow.com/publications/s2013-shading-course/karis/s2013_pbs_epic_notes_v2.pdf)
 $$
-\dfrac{1}{N}\sum_{k=1}^{N}\dfrac{f_s(\vec{\omega_k}, \vec{\omega_o})L_i(\vec{\omega_k})(\vec{\omega_k}\cdot\vec{n})}{\text{pdf}(\vec{\omega_k}, \vec{\omega_o})}\approx\left(\dfrac{1}{N}\sum_{k=1}^N L_i(\vec{\omega_k})\right)\left(\dfrac{1}{N}\sum_{k=1}^{N}\dfrac{f_s(\vec{\omega_k}, \vec{\omega_o})(\vec{\omega_k}\cdot\vec{n})}{\text{pdf}(\vec{\omega_k})}\right)
+\begin{aligned}
+&\dfrac{1}{N}\sum_{k=1}^{N}\dfrac{f_s(\vec{\omega_k}, \vec{\omega_o})L_i(\vec{\omega_k})(\vec{\omega_k}\cdot\vec{n})}{\text{pdf}(\vec{\omega_k}, \vec{\omega_o})}\\
+\approx&\left(\dfrac{1}{N}\sum_{k=1}^N L_i(\vec{\omega_k})\right)\left(\dfrac{1}{N}\sum_{k=1}^{N}\dfrac{f_s(\vec{\omega_k}, \vec{\omega_o})(\vec{\omega_k}\cdot\vec{n})}{\text{pdf}(\vec{\omega_k})}\right)
+\end{aligned}
 $$
 这种方法的好处是可以通过分开预计算，尽量减少实际渲染时的计算量，这个公式可以理解为“Env. lighting x BRDF”，左边的第一部分是小平面受到的所有环境光的采样值，第二部分只跟材质的BRDF属性相关。
 
@@ -71,7 +77,10 @@ $$\begin{split}
 \end{split}$$
 使用Mathmatica计算可得
 $$
-\text{cdf}(\theta)=\dfrac{\sin^2\theta}{\cos^2\theta(\alpha^2-1)+1}=\dfrac{1-\cos^2\theta}{\cos^2\theta(\alpha^2-1)+1} 
+\begin{aligned}
+\text{cdf}(\theta)&=\dfrac{\sin^2\theta}{\cos^2\theta(\alpha^2-1)+1}\\
+&=\dfrac{1-\cos^2\theta}{\cos^2\theta(\alpha^2-1)+1} 
+\end{aligned}
 $$
 根据前面的概率知识，可以得到微表面的法线的球坐标$\theta$和$\phi$的采样函数为
 $$\begin{split}
@@ -85,7 +94,7 @@ $$
 \dfrac{1}{N}\sum_{k=1}^N L_i(\vec{\omega}_k)\approx\dfrac{1}{\sum_{k=1}^{N}(\vec{n}\cdot\vec{\omega}_k)}\sum_{k=1}^{N}{L_i(\vec{\omega}_k)(\vec{n}\cdot\vec{\omega}_k)}
 $$
 
-```cpp
+```cpp :no-line-numbers
 // make the simplyfying assumption that V equals R equals the normal 
 vec3 R = N;
 vec3 V = R;
@@ -96,7 +105,8 @@ float totalWeight = 0.0;
 
 for(uint i = 0u; i < SAMPLE_COUNT; ++i)
 {
-    // generates a sample vector that's biased towards the preferred alignment direction (importance sampling).
+    // generates a sample vector that's biased towards the preferred 
+    //alignment direction (importance sampling).
     vec2 Xi = Hammersley(i, SAMPLE_COUNT);
     vec3 H = ImportanceSampleGGX(Xi, N, roughness);
     vec3 L  = normalize(2.0 * dot(V, H) * H - V);

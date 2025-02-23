@@ -134,7 +134,10 @@ d^2\Phi=L_r dA_r d\omega_r \cos\theta_r
 $$
 代入前面的立体角公式可得
 $$
-\displaystyle{ d^2\Phi=L_sdA_s\cos\theta_s\frac{dA_r\cos\theta_r}{r^2}=L_rdA_r\cos\theta_r\frac{dA_s\cos\theta_s}{r^2}}
+\begin{aligned}
+d^2\Phi&=\displaystyle{L_sdA_s\cos\theta_s\frac{dA_r\cos\theta_r}{r^2}}\\
+&=\displaystyle{L_rdA_r\cos\theta_r\frac{dA_s\cos\theta_s}{r^2}}
+\end{aligned}
 $$
 整理可得
 $$

@@ -142,13 +142,14 @@ $$
 ### 2.5叉积
 #### 2.5.1 定义
 对于两个三维矢量$\vec{a}, \vec{b}$，定义它们的叉积
-$$
-\vec{\boldsymbol a}\times\vec{\boldsymbol b}=\begin{vmatrix}
+$$\begin{aligned}
+\vec{\boldsymbol a}\times\vec{\boldsymbol b}&=\begin{vmatrix}
 \vec{\boldsymbol i}& \vec{\boldsymbol j} & \vec{\boldsymbol k}\cr
 a_x   & a_y & a_z \cr
 b_x & b_y & b_z
-\end{vmatrix}=
-(a_yb_z-a_zb_y)\vec{\boldsymbol{i}}+(a_zb_x-a_xb_z)\vec{\boldsymbol{j}}+(a_xb_y-a_yb_x)\vec{\boldsymbol{k}}
+\end{vmatrix}\\
+&=(a_yb_z-a_zb_y)\vec{\boldsymbol{i}}+(a_zb_x-a_xb_z)\vec{\boldsymbol{j}}+(a_xb_y-a_yb_x)\vec{\boldsymbol{k}}
+\end{aligned}
 $$
 #### 2.5.2 叉积的几何意义
 在三维几何中，向量a和向量b的叉乘结果是一个向量，更为熟知的叫法是法向量，该向量垂直于a和b向量构成的平面。

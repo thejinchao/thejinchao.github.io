@@ -7,19 +7,23 @@ $\boldsymbol A_{ij}$表示第$i$行第$j$列的元素，
 $\boldsymbol A_{i,*}$表示第$i$行所有元素，
 $\boldsymbol A_{*,j}$表示第$j$列所有元素，
 $$
-\boldsymbol A=\begin{bmatrix}
+\begin{aligned}
+\boldsymbol A&=\begin{bmatrix}
 A_{11}&A_{12}&A_{13}\\
 A_{21}&A_{22}&A_{23}\\
 A_{31}&A_{32}&A_{33}
-\end{bmatrix}=\begin{bmatrix}
+\end{bmatrix}\\
+&=\begin{bmatrix}
 \leftarrow & A_{1,*} & \rightarrow \\
 \leftarrow & A_{2,*} & \rightarrow \\
 \leftarrow & A_{3,*} & \rightarrow 
-\end{bmatrix}=\begin{bmatrix}
+\end{bmatrix}\\
+&=\begin{bmatrix}
 \uparrow & \uparrow & \uparrow \\
 A_{*,1} & A_{*,2} & A_{*,3} \\
 \downarrow & \downarrow & \downarrow 
 \end{bmatrix}
+\end{aligned}
 $$
 ### 3.2 加法
 如果矩阵$\boldsymbol A$是一个$m\times n$的矩阵，矩阵$\boldsymbol B$是一个$m\times n$的矩阵，那么$\boldsymbol A +\boldsymbol B$是一个$m\times n$的矩阵$\boldsymbol C$，并且
@@ -72,11 +76,13 @@ $$
 
 #### 3.4.2 举例
 $$
-\boldsymbol A=\begin{bmatrix}
+\begin{aligned}
+\boldsymbol A&=\begin{bmatrix}
 2&-1&8\\3&6&-4\end{bmatrix}\\
-\boldsymbol A^T=\begin{bmatrix}
+\boldsymbol A^T&=\begin{bmatrix}
 2&3\\-1&6\\8&-4
 \end{bmatrix}
+\end{aligned}
 $$
 
 ### 3.4.3 正交矩阵
@@ -140,10 +146,13 @@ $$
 
 #### 3.8.2 举例
 $$
-\det{\begin{bmatrix}
+\begin{aligned}
+&\det{\begin{bmatrix}
 A_{11}&A_{12}\\
 A_{21}&A_{22}
-\end{bmatrix}}=A_{11}\det[A_{22}]-A_{12}\det[A_{21}]=A_{11}A_{22}-A_{12}A_{21}
+\end{bmatrix}}\\
+&=A_{11}\det[A_{22}]-A_{12}\det[A_{21}]=A_{11}A_{22}-A_{12}A_{21}
+\end{aligned}
 $$
 
 $$\begin{split}

@@ -26,7 +26,7 @@ $$\begin{split}
 \end{split}$$
 
 ### 9.2 计算
-根据[坐标系变换公式](/graphics/math/transform_02.html#_6-2-3-%E7%BB%84%E5%90%88%E5%90%8E%E7%9A%84%E5%9D%90%E6%A0%87%E8%BD%AC%E6%8D%A2%E7%9F%A9%E9%98%B5)，设摄像机在世界坐标系中的位置为$e$，摄像机的三个轴的单位轴向量为$\vec{\boldsymbol{i}'}, \vec{\boldsymbol{j}'}, \vec{\boldsymbol{k}'}$视图变换矩阵为
+根据[坐标系变换公式](/note/graphics/math/transform_02.html#_6-2-3-%E7%BB%84%E5%90%88%E5%90%8E%E7%9A%84%E5%9D%90%E6%A0%87%E8%BD%AC%E6%8D%A2%E7%9F%A9%E9%98%B5)，设摄像机在世界坐标系中的位置为$e$，摄像机的三个轴的单位轴向量为$\vec{\boldsymbol{i}'}, \vec{\boldsymbol{j}'}, \vec{\boldsymbol{k}'}$视图变换矩阵为
 $$
 M_{view}=\begin{bmatrix}
 i_x'&i_y'&i_z'&-\vec{\boldsymbol{e}}\cdot\vec{\boldsymbol{i}}' \\
@@ -161,12 +161,15 @@ $$\begin{split}
 #### 10.2.3 合并后的矩阵
 最终得到合并后的投影矩阵为
 $$
-\boldsymbol{M}_{\text{persp}\rightarrow\text{ccv}}=\boldsymbol{M}_{\text{ortho}\rightarrow\text{ccv}}\boldsymbol{M}_{\text{persp}\rightarrow\text{ortho}}=\begin{bmatrix}
+\begin{aligned}
+\boldsymbol{M}_{\text{persp}\rightarrow\text{ccv}}&=\boldsymbol{M}_{\text{ortho}\rightarrow\text{ccv}}\boldsymbol{M}_{\text{persp}\rightarrow\text{ortho}}\\
+&=\begin{bmatrix}
 \frac{2n}{w}&0&0&0\\
 0&\frac{2n}{h}&0&0\\
 0&0&-\frac{n+f}{n-f}&\frac{2nf}{n-f}\\
 0&0&1&0
 \end{bmatrix}
+\end{aligned}
 $$
 在大部分工程项目中，摄像机的输入参数一般是如下几个
  * 宽高比 $aspect=w/h$

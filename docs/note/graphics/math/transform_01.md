@@ -58,9 +58,11 @@ $$
 #### 3.2.1 **结果**
 围绕$x,y,z$轴旋转$\theta$的旋转矩阵
 $$
-\boldsymbol{R_x}=\begin{bmatrix}1&0&0\\0&\cos(\theta)&-\sin(\theta)\\0&\sin(\theta)&\cos(\theta)\end{bmatrix}
-\boldsymbol{R_y}=\begin{bmatrix}\cos(\theta)&0&\sin(\theta)\\ 0&1&0\\ -\sin(\theta)&0&\cos(\theta)\end{bmatrix}
-\boldsymbol{R_z}=\begin{bmatrix}\cos(\theta)&-\sin(\theta)&0 \\ \sin(\theta)&\cos(\theta)&0\\ 0&0&1\end{bmatrix}
+\begin{aligned}
+\boldsymbol{R_x}&=\begin{bmatrix}1&0&0\\0&\cos(\theta)&-\sin(\theta)\\0&\sin(\theta)&\cos(\theta)\end{bmatrix}\\
+\boldsymbol{R_y}&=\begin{bmatrix}\cos(\theta)&0&\sin(\theta)\\ 0&1&0\\ -\sin(\theta)&0&\cos(\theta)\end{bmatrix}\\
+\boldsymbol{R_z}&=\begin{bmatrix}\cos(\theta)&-\sin(\theta)&0 \\ \sin(\theta)&\cos(\theta)&0\\ 0&0&1\end{bmatrix}
+\end{aligned}
 $$
 #### 3.2.2 **求解过程**
 以$R_z$为例
@@ -134,7 +136,7 @@ R_n(\vec{v})&=\vec{v}-\vec{v}+\vec{v}\cos(\theta)+(1-\cos(\theta))(\vec{v}\cdot\
 &=\vec{v}+(1-\cos(\theta))[(\vec{v}\cdot\vec{n})\vec{n}-\vec{v}]+(\vec{n}\times\vec{v})\sin(\theta)\\
 &=\vec{v}+(1-\cos(\theta))[(\vec{v}\cdot\vec{n})\vec{n}-(\vec{n}\cdot\vec{n})\vec{v}]+(\vec{n}\times\vec{v})\sin(\theta)
 \end{split}$$
-根据矢量[三重积公式](/graphics/math/math_01.html#_2-7-%E4%B8%89%E9%87%8D%E7%A7%AF)，可以得到
+根据矢量[三重积公式](/note/graphics/math/math_01.html#_2-7-%E4%B8%89%E9%87%8D%E7%A7%AF)，可以得到
 $$
 (\vec{v}\cdot\vec{n})\vec{n}-(\vec{n}\cdot\vec{n})\vec{v}=\vec{n}\times(\vec{n}\times\vec{v})
 $$
@@ -142,7 +144,7 @@ $$
 $$
 R_n(\vec{v})=\vec{v}+(1-\cos(\theta))[\vec{n}\times(\vec{n}\times\vec{v})]+(\vec{n}\times\vec{v})\sin(\theta)
 $$
-使用向量$\vec{n}$的[叉乘矩阵](./graphics/math/math_01.html#_2-5-4-%E5%8F%89%E7%A7%AF%E7%9A%84%E7%9F%A9%E9%98%B5%E5%BD%A2%E5%BC%8F)$[\boldsymbol{n}]_{\times}$来代替叉乘，这里记矩阵$\boldsymbol{M_n}$为向量$\vec{n}$的叉积矩阵
+使用向量$\vec{n}$的[叉乘矩阵](/note/graphics/math/math_01.html#_2-5-4-%E5%8F%89%E7%A7%AF%E7%9A%84%E7%9F%A9%E9%98%B5%E5%BD%A2%E5%BC%8F)$[\boldsymbol{n}]_{\times}$来代替叉乘，这里记矩阵$\boldsymbol{M_n}$为向量$\vec{n}$的叉积矩阵
 $$
 \boldsymbol{M_n}=\begin{bmatrix}
 0&-n_z&n_y\\
@@ -168,7 +170,7 @@ R_n(\vec{\boldsymbol{i}})&=c\vec{i}+(1-c)(\vec{i}\cdot\vec{n})\vec{n}
 R_n(\vec{\boldsymbol{j}})&=[(1-c)xy-sz,c+(1-c)y^2,(1-c)yz+sx]^T\\
 R_n(\vec{\boldsymbol{k}})&=[(1-c)xz+sy,(1-c)yz-sx,c+(1-c)z^2]^T
 \end{split}$$
-代入公式[1.3.1](/graphics/math/transform_01.html#_1-3-使用矩阵表示)得到
+代入公式[1.3.1](/note/graphics/math/transform_01.html#_1-3-使用矩阵表示)得到
 $$
 \boldsymbol{R_n}=\begin{bmatrix}
 c+(1-c)x^2& (1-c)xy-sz&(1-c)xz+sy\\

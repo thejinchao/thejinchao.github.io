@@ -25,9 +25,11 @@ G_1=\dfrac{x}{y}=\dfrac{2\sin\gamma\sin\alpha}{\sin(\beta+\pi/2)}
 $$
 其中
 $$
-\sin\alpha=\vec{n}\cdot\vec{h} \\
-\sin(\beta+\pi/2)=\cos\beta=\vec{v}\cdot\vec{h} \\
-\sin\gamma=\vec{n}\cdot\vec{l}
+\begin{aligned}
+\sin\alpha&=\vec{n}\cdot\vec{h} \\
+\sin(\beta+\pi/2)&=\cos\beta=\vec{v}\cdot\vec{h} \\
+\sin\gamma&=\vec{n}\cdot\vec{l}
+\end{aligned}
 $$
 所以可以求得
 $$
@@ -39,16 +41,21 @@ G_2=\dfrac{2(\vec{n}\cdot\vec{h})(\vec{n}\cdot\vec{v})}{\vec{v}\cdot\vec{h}}
 $$
 所以光线受几何衰减因子的影响共有三种可能性，完全不受影响，照射光被阻挡，反射光被阻挡，最终的表达式为
 $$
-G(\vec{l},\vec{v},\vec{h})=\min\{1,G_1,G_2\}=\min\left\{1,\dfrac{2(\vec{n}\cdot\vec{h})(\vec{n}\cdot\vec{l})}{\vec{v}\cdot\vec{h}}
+\begin{aligned}
+G(\vec{l},\vec{v},\vec{h})&=\min\{1,G_1,G_2\}\\
+&=\min\left\{1,\dfrac{2(\vec{n}\cdot\vec{h})(\vec{n}\cdot\vec{l})}{\vec{v}\cdot\vec{h}}
 ,\dfrac{2(\vec{n}\cdot\vec{h})(\vec{n}\cdot\vec{v})}{\vec{v}\cdot\vec{h}}
 \right\}
+\end{aligned}
 $$
 
 ### 7.3 Schlick-Beckmann
 在Unreal Engine中，使用了这种模型，在这种模型中
 $$
-G(\vec{l},\vec{v},\vec{h})=G_1(\vec{l})G_1(\vec{v}) \\
-G_1(\vec{v})=\dfrac{\vec{n}\cdot\vec{v}}{(\vec{n}\cdot\vec{v})(1-k)+k}
+\begin{aligned}
+G(\vec{l},\vec{v},\vec{h})&=G_1(\vec{l})G_1(\vec{v}) \\
+G_1(\vec{v})&=\dfrac{\vec{n}\cdot\vec{v}}{(\vec{n}\cdot\vec{v})(1-k)+k}
+\end{aligned}
 $$
 在原始的Schlick算法中，定义
 $$
@@ -60,11 +67,17 @@ k=\frac{\alpha}{2}
 $$
 根据所计算的光源的不同，$\alpha$的定义也不同，当使用间接光源(IBL)时
 $$
-\alpha=roughness^2, k=\dfrac{roughness^2}{2}
+\begin{aligned}
+\alpha&=roughness^2\\
+k&=\dfrac{roughness^2}{2}
+\end{aligned}
 $$
 使用直接光源时，
 $$
-\alpha=\left(\frac{roughness+1}{2}\right)^2, k=\dfrac{(roughness+1)^2}{8}
+\begin{aligned}
+\alpha&=\left(\frac{roughness+1}{2}\right)^2\\
+k&=\dfrac{(roughness+1)^2}{8}
+\end{aligned}
 $$
 
 ## 8. 菲尼尔反射方程

@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="800"
-   height="350"
-   viewBox="0 0 211.66666 92.604173"
+   width="400"
+   height="520"
+   viewBox="0 0 105.83333 137.58334"
    version="1.1"
    id="svg8"
    inkscape:version="1.4 (86a8ad7, 2024-10-11)"
@@ -24,17 +24,17 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4778532"
-     inkscape:cx="390.4312"
-     inkscape:cy="79.168892"
+     inkscape:cx="359.6433"
+     inkscape:cy="321.7505"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      units="px"
      inkscape:snap-intersection-paths="true"
      inkscape:window-width="2560"
-     inkscape:window-height="1476"
-     inkscape:window-x="-12"
-     inkscape:window-y="-12"
+     inkscape:window-height="1494"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
      inkscape:window-maximized="1"
      inkscape:snap-midpoints="true"
      inkscape:pagecheckerboard="0"
@@ -344,17 +344,17 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(0, -191.167)"
+     transform="translate(0,-191.167)"
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="Layer 1">
     <g
        inkscape:label=""
-       transform="translate(92.626275,235.43594)"
+       transform="rotate(90,-92.786122,150.90655)"
        id="g24"
        style="stroke:none;stroke-width:1.00013;stroke-dasharray:none;stroke-opacity:1"
-       inkscape:transform-center-x="2.6854835"
-       inkscape:transform-center-y="6.6241925">
+       inkscape:transform-center-x="6.6241936"
+       inkscape:transform-center-y="-2.6854843">
       <g
          fill="#000000"
          fill-opacity="1"
@@ -373,7 +373,8 @@
       </g>
     </g>
     <g
-       id="g6">
+       id="g6"
+       transform="translate(7.340321,-9.846772)">
       <path
          sodipodi:nodetypes="ccccc"
          inkscape:connector-curvature="0"
@@ -778,7 +779,8 @@
       </g>
     </g>
     <g
-       id="g14">
+       id="g14"
+       transform="translate(-99.183849,51.203215)">
       <path
          style="fill:none;stroke:#0000ff;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 155.48005,203.41996 31.32432,7.80112 -3.58316,31.04593"

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    id="svg711"
-   sodipodi:docname="microface_beckmann.svg"
-   width="800"
+   sodipodi:docname="microfacet_beckmann.svg"
+   width="610"
    height="200"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata715">
     <rdf:RDF>
@@ -21,7 +21,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -34,26 +33,29 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
+     inkscape:window-width="2560"
+     inkscape:window-height="1494"
      id="namedview713"
      showgrid="false"
      inkscape:zoom="1.18"
-     inkscape:cx="274.81256"
-     inkscape:cy="132.71141"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:cx="275"
+     inkscape:cy="133.47458"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg711" />
+     inkscape:current-layer="svg711"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
   <g
      id="g35"
      clip-path="url(#cp1)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp1">
       <polygon
          id="polygon4"
-         points="188,23 188,188 455,188 455,23 " />
+         points="455,23 188,23 188,188 455,188 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -129,28 +131,28 @@
   <g
      id="g42"
      clip-path="url(#cp2)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp2">
       <polygon
          id="polygon37"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline40"
        d="m 193.669,187.372 v -3.148"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g49"
      clip-path="url(#cp3)"
-     transform="translate(114.86406,177.37211)">
+     transform="translate(23.338636,177.37211)">
     <clipPath
        id="cp3">
       <polygon
          id="polygon44"
-         points="13.8309,12.6279 13.8309,-1.37211 -1.16915,-1.37211 -1.16915,12.6279 " />
+         points="-1.16915,12.6279 13.8309,12.6279 13.8309,-1.37211 -1.16915,-1.37211 " />
     </clipPath>
     <g
        id="text47"
@@ -176,92 +178,92 @@
   <g
      id="g56"
      clip-path="url(#cp4)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp4">
       <polygon
          id="polygon51"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline54"
        d="m 209.904,187.372 v -1.889"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g63"
      clip-path="url(#cp5)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp5">
       <polygon
          id="polygon58"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline61"
        d="m 226.138,187.372 v -1.889"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g70"
      clip-path="url(#cp6)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp6">
       <polygon
          id="polygon65"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline68"
        d="m 242.373,187.372 v -1.889"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g77"
      clip-path="url(#cp7)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp7">
       <polygon
          id="polygon72"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline75"
        d="m 258.607,187.372 v -1.889"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g84"
      clip-path="url(#cp8)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp8">
       <polygon
          id="polygon79"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline82"
        d="m 274.842,187.372 v -3.148"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g91"
      clip-path="url(#cp9)"
-     transform="translate(196.03689,177.37211)">
+     transform="translate(104.51147,177.37211)">
     <clipPath
        id="cp9">
       <polygon
          id="polygon86"
-         points="13.658,12.6279 13.658,-1.37211 -1.34198,-1.37211 -1.34198,12.6279 " />
+         points="-1.34198,12.6279 13.658,12.6279 13.658,-1.37211 -1.34198,-1.37211 " />
     </clipPath>
     <g
        id="text89"
@@ -287,92 +289,92 @@
   <g
      id="g98"
      clip-path="url(#cp10)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp10">
       <polygon
          id="polygon93"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline96"
        d="m 291.077,187.372 v -1.889"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g105"
      clip-path="url(#cp11)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp11">
       <polygon
          id="polygon100"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline103"
        d="m 307.311,187.372 v -1.889"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g112"
      clip-path="url(#cp12)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp12">
       <polygon
          id="polygon107"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline110"
        d="m 323.546,187.372 v -1.889"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g119"
      clip-path="url(#cp13)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp13">
       <polygon
          id="polygon114"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline117"
        d="m 339.78,187.372 v -1.889"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g126"
      clip-path="url(#cp14)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp14">
       <polygon
          id="polygon121"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline124"
        d="m 356.015,187.372 v -3.148"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g133"
      clip-path="url(#cp15)"
-     transform="translate(277.20972,177.37211)">
+     transform="translate(185.6843,177.37211)">
     <clipPath
        id="cp15">
       <polygon
          id="polygon128"
-         points="14.4852,12.6279 14.4852,-1.37211 -0.514813,-1.37211 -0.514813,12.6279 " />
+         points="-0.514813,12.6279 14.4852,12.6279 14.4852,-1.37211 -0.514813,-1.37211 " />
     </clipPath>
     <g
        id="text131"
@@ -398,92 +400,92 @@
   <g
      id="g140"
      clip-path="url(#cp16)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp16">
       <polygon
          id="polygon135"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline138"
        d="m 372.249,187.372 v -1.889"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g147"
      clip-path="url(#cp17)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp17">
       <polygon
          id="polygon142"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline145"
        d="m 388.484,187.372 v -1.889"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g154"
      clip-path="url(#cp18)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp18">
       <polygon
          id="polygon149"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline152"
        d="m 404.719,187.372 v -1.889"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g161"
      clip-path="url(#cp19)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp19">
       <polygon
          id="polygon156"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline159"
        d="m 420.953,187.372 v -1.889"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g168"
      clip-path="url(#cp20)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp20">
       <polygon
          id="polygon163"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline166"
        d="m 437.188,187.372 v -3.148"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g175"
      clip-path="url(#cp21)"
-     transform="translate(358.38256,177.37211)">
+     transform="translate(266.85714,177.37211)">
     <clipPath
        id="cp21">
       <polygon
          id="polygon170"
-         points="14.3124,12.6279 14.3124,-1.37211 -0.687647,-1.37211 -0.687647,12.6279 " />
+         points="-0.687647,12.6279 14.3124,12.6279 14.3124,-1.37211 -0.687647,-1.37211 " />
     </clipPath>
     <g
        id="text173"
@@ -509,140 +511,140 @@
   <g
      id="g182"
      clip-path="url(#cp22)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp22">
       <polygon
          id="polygon177"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline180"
        d="m 453.422,187.372 v -1.889"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g189"
      clip-path="url(#cp23)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp23">
       <polygon
          id="polygon184"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline187"
        d="M 188.356,187.372 H 453.994"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g196"
      clip-path="url(#cp24)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp24">
       <polygon
          id="polygon191"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline194"
        d="m 193.669,187.372 h 3.149"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g203"
      clip-path="url(#cp25)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp25">
       <polygon
          id="polygon198"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline201"
        d="m 193.669,179.385 h 1.889"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g210"
      clip-path="url(#cp26)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp26">
       <polygon
          id="polygon205"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline208"
        d="m 193.669,171.398 h 1.889"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g217"
      clip-path="url(#cp27)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp27">
       <polygon
          id="polygon212"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline215"
        d="m 193.669,163.41 h 1.889"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g224"
      clip-path="url(#cp28)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp28">
       <polygon
          id="polygon219"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline222"
        d="m 193.669,155.423 h 1.889"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g231"
      clip-path="url(#cp29)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp29">
       <polygon
          id="polygon226"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline229"
        d="m 193.669,147.436 h 3.149"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g238"
      clip-path="url(#cp30)"
-     transform="translate(105.36406,128.43606)">
+     transform="translate(13.838636,128.43606)">
     <clipPath
        id="cp30">
       <polygon
          id="polygon233"
-         points="14.3309,12.5639 14.3309,-1.43606 0.330854,-1.43606 0.330854,12.5639 " />
+         points="0.330854,12.5639 14.3309,12.5639 14.3309,-1.43606 0.330854,-1.43606 " />
     </clipPath>
     <g
        id="text236"
@@ -668,92 +670,92 @@
   <g
      id="g245"
      clip-path="url(#cp31)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp31">
       <polygon
          id="polygon240"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline243"
        d="m 193.669,139.449 h 1.889"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g252"
      clip-path="url(#cp32)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp32">
       <polygon
          id="polygon247"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline250"
        d="m 193.669,131.462 h 1.889"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g259"
      clip-path="url(#cp33)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp33">
       <polygon
          id="polygon254"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline257"
        d="m 193.669,123.474 h 1.889"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g266"
      clip-path="url(#cp34)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp34">
       <polygon
          id="polygon261"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline264"
        d="m 193.669,115.487 h 1.889"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g273"
      clip-path="url(#cp35)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp35">
       <polygon
          id="polygon268"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline271"
        d="m 193.669,107.5 h 3.149"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g280"
      clip-path="url(#cp36)"
-     transform="translate(105.36406,88.5)">
+     transform="translate(13.838636,88.5)">
     <clipPath
        id="cp36">
       <polygon
          id="polygon275"
-         points="14.3309,13.5 14.3309,-0.5 0.330854,-0.5 0.330854,13.5 " />
+         points="0.330854,13.5 14.3309,13.5 14.3309,-0.5 0.330854,-0.5 " />
     </clipPath>
     <g
        id="text278"
@@ -779,92 +781,92 @@
   <g
      id="g287"
      clip-path="url(#cp37)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp37">
       <polygon
          id="polygon282"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline285"
        d="m 193.669,99.5128 h 1.889"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g294"
      clip-path="url(#cp38)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp38">
       <polygon
          id="polygon289"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline292"
        d="m 193.669,91.5256 h 1.889"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g301"
      clip-path="url(#cp39)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp39">
       <polygon
          id="polygon296"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline299"
        d="m 193.669,83.5384 h 1.889"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g308"
      clip-path="url(#cp40)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp40">
       <polygon
          id="polygon303"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline306"
        d="m 193.669,75.5512 h 1.889"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g315"
      clip-path="url(#cp41)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp41">
       <polygon
          id="polygon310"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline313"
        d="m 193.669,67.5639 h 3.149"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g322"
      clip-path="url(#cp42)"
-     transform="translate(105.36406,48.563944)">
+     transform="translate(13.838636,48.563944)">
     <clipPath
        id="cp42">
       <polygon
          id="polygon317"
-         points="14.3309,13.4361 14.3309,-0.563944 0.330854,-0.563944 0.330854,13.4361 " />
+         points="0.330854,13.4361 14.3309,13.4361 14.3309,-0.563944 0.330854,-0.563944 " />
     </clipPath>
     <g
        id="text320"
@@ -890,92 +892,92 @@
   <g
      id="g329"
      clip-path="url(#cp43)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp43">
       <polygon
          id="polygon324"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline327"
        d="m 193.669,59.5767 h 1.889"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g336"
      clip-path="url(#cp44)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp44">
       <polygon
          id="polygon331"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline334"
        d="m 193.669,51.5895 h 1.889"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g343"
      clip-path="url(#cp45)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp45">
       <polygon
          id="polygon338"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline341"
        d="m 193.669,43.6023 h 1.889"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g350"
      clip-path="url(#cp46)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp46">
       <polygon
          id="polygon345"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline348"
        d="m 193.669,35.6151 h 1.889"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g357"
      clip-path="url(#cp47)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp47">
       <polygon
          id="polygon352"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline355"
        d="m 193.669,27.6279 h 3.149"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g364"
      clip-path="url(#cp48)"
-     transform="translate(105.36406,8.627888)">
+     transform="translate(13.838636,8.627888)">
     <clipPath
        id="cp48">
       <polygon
          id="polygon359"
-         points="14.3309,13.3721 14.3309,0.372112 0.330854,0.372112 0.330854,13.3721 " />
+         points="0.330854,13.3721 14.3309,13.3721 14.3309,0.372112 0.330854,0.372112 " />
     </clipPath>
     <g
        id="text362"
@@ -1001,28 +1003,28 @@
   <g
      id="g371"
      clip-path="url(#cp49)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp49">
       <polygon
          id="polygon366"
-         points="457,204 457,22 178,22 178,204 " />
+         points="178,204 457,204 457,22 178,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
        id="polyline369"
        d="M 193.669,187.372 V 23.1991"
-       style="fill:none;stroke:#000000;stroke-width:1.32818997px;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.32819px;stroke-opacity:1" />
   </g>
   <g
      id="g390"
      clip-path="url(#cp50)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp50">
       <polygon
          id="polygon373"
-         points="496,22 496,188 765,188 765,22 " />
+         points="765,22 496,22 496,188 765,188 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1063,12 +1065,12 @@
   <g
      id="g397"
      clip-path="url(#cp51)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp51">
       <polygon
          id="polygon392"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1079,12 +1081,12 @@
   <g
      id="g404"
      clip-path="url(#cp52)"
-     transform="translate(423.8188,177.37211)">
+     transform="translate(332.29338,177.37211)">
     <clipPath
        id="cp52">
       <polygon
          id="polygon399"
-         points="13.8761,12.6279 13.8761,-1.37211 -1.12389,-1.37211 -1.12389,12.6279 " />
+         points="-1.12389,12.6279 13.8761,12.6279 13.8761,-1.37211 -1.12389,-1.37211 " />
     </clipPath>
     <g
        id="text402"
@@ -1110,12 +1112,12 @@
   <g
      id="g411"
      clip-path="url(#cp53)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp53">
       <polygon
          id="polygon406"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1126,12 +1128,12 @@
   <g
      id="g418"
      clip-path="url(#cp54)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp54">
       <polygon
          id="polygon413"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1142,12 +1144,12 @@
   <g
      id="g425"
      clip-path="url(#cp55)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp55">
       <polygon
          id="polygon420"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1158,12 +1160,12 @@
   <g
      id="g432"
      clip-path="url(#cp56)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp56">
       <polygon
          id="polygon427"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1174,12 +1176,12 @@
   <g
      id="g439"
      clip-path="url(#cp57)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp57">
       <polygon
          id="polygon434"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1190,12 +1192,12 @@
   <g
      id="g446"
      clip-path="url(#cp58)"
-     transform="translate(505.43835,177.37211)">
+     transform="translate(413.91293,177.37211)">
     <clipPath
        id="cp58">
       <polygon
          id="polygon441"
-         points="14.2566,12.6279 14.2566,-1.37211 -0.743437,-1.37211 -0.743437,12.6279 " />
+         points="-0.743437,12.6279 14.2566,12.6279 14.2566,-1.37211 -0.743437,-1.37211 " />
     </clipPath>
     <g
        id="text444"
@@ -1221,12 +1223,12 @@
   <g
      id="g453"
      clip-path="url(#cp59)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp59">
       <polygon
          id="polygon448"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1237,12 +1239,12 @@
   <g
      id="g460"
      clip-path="url(#cp60)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp60">
       <polygon
          id="polygon455"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1253,12 +1255,12 @@
   <g
      id="g467"
      clip-path="url(#cp61)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp61">
       <polygon
          id="polygon462"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1269,12 +1271,12 @@
   <g
      id="g474"
      clip-path="url(#cp62)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp62">
       <polygon
          id="polygon469"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1285,12 +1287,12 @@
   <g
      id="g481"
      clip-path="url(#cp63)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp63">
       <polygon
          id="polygon476"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1301,12 +1303,12 @@
   <g
      id="g488"
      clip-path="url(#cp64)"
-     transform="translate(587.0579,177.37211)">
+     transform="translate(495.53248,177.37211)">
     <clipPath
        id="cp64">
       <polygon
          id="polygon483"
-         points="13.637,12.6279 13.637,-1.37211 -1.36299,-1.37211 -1.36299,12.6279 " />
+         points="-1.36299,12.6279 13.637,12.6279 13.637,-1.37211 -1.36299,-1.37211 " />
     </clipPath>
     <g
        id="text486"
@@ -1332,12 +1334,12 @@
   <g
      id="g495"
      clip-path="url(#cp65)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp65">
       <polygon
          id="polygon490"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1348,12 +1350,12 @@
   <g
      id="g502"
      clip-path="url(#cp66)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp66">
       <polygon
          id="polygon497"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1364,12 +1366,12 @@
   <g
      id="g509"
      clip-path="url(#cp67)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp67">
       <polygon
          id="polygon504"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1380,12 +1382,12 @@
   <g
      id="g516"
      clip-path="url(#cp68)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp68">
       <polygon
          id="polygon511"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1396,12 +1398,12 @@
   <g
      id="g523"
      clip-path="url(#cp69)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp69">
       <polygon
          id="polygon518"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1412,12 +1414,12 @@
   <g
      id="g530"
      clip-path="url(#cp70)"
-     transform="translate(668.67745,177.37211)">
+     transform="translate(577.15203,177.37211)">
     <clipPath
        id="cp70">
       <polygon
          id="polygon525"
-         points="14.0175,12.6279 14.0175,-1.37211 -0.982535,-1.37211 -0.982535,12.6279 " />
+         points="-0.982535,12.6279 14.0175,12.6279 14.0175,-1.37211 -0.982535,-1.37211 " />
     </clipPath>
     <g
        id="text528"
@@ -1443,12 +1445,12 @@
   <g
      id="g537"
      clip-path="url(#cp71)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp71">
       <polygon
          id="polygon532"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1459,12 +1461,12 @@
   <g
      id="g544"
      clip-path="url(#cp72)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp72">
       <polygon
          id="polygon539"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1475,12 +1477,12 @@
   <g
      id="g551"
      clip-path="url(#cp73)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp73">
       <polygon
          id="polygon546"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1491,12 +1493,12 @@
   <g
      id="g558"
      clip-path="url(#cp74)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp74">
       <polygon
          id="polygon553"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1507,12 +1509,12 @@
   <g
      id="g565"
      clip-path="url(#cp75)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp75">
       <polygon
          id="polygon560"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1523,12 +1525,12 @@
   <g
      id="g572"
      clip-path="url(#cp76)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp76">
       <polygon
          id="polygon567"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1539,12 +1541,12 @@
   <g
      id="g579"
      clip-path="url(#cp77)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp77">
       <polygon
          id="polygon574"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1555,12 +1557,12 @@
   <g
      id="g586"
      clip-path="url(#cp78)"
-     transform="translate(422.3188,131.28988)">
+     transform="translate(330.79338,131.28988)">
     <clipPath
        id="cp78">
       <polygon
          id="polygon581"
-         points="6.37611,12.7101 6.37611,-1.28988 -0.623889,-1.28988 -0.623889,12.7101 " />
+         points="-0.623889,12.7101 6.37611,12.7101 6.37611,-1.28988 -0.623889,-1.28988 " />
     </clipPath>
     <g
        id="text584"
@@ -1576,12 +1578,12 @@
   <g
      id="g593"
      clip-path="url(#cp79)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp79">
       <polygon
          id="polygon588"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1592,12 +1594,12 @@
   <g
      id="g600"
      clip-path="url(#cp80)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp80">
       <polygon
          id="polygon595"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1608,12 +1610,12 @@
   <g
      id="g607"
      clip-path="url(#cp81)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp81">
       <polygon
          id="polygon602"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1624,12 +1626,12 @@
   <g
      id="g614"
      clip-path="url(#cp82)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp82">
       <polygon
          id="polygon609"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1640,12 +1642,12 @@
   <g
      id="g621"
      clip-path="url(#cp83)"
-     transform="translate(422.3188,94.20765)">
+     transform="translate(330.79338,94.20765)">
     <clipPath
        id="cp83">
       <polygon
          id="polygon616"
-         points="6.37611,12.7924 6.37611,-1.20765 -0.623889,-1.20765 -0.623889,12.7924 " />
+         points="-0.623889,12.7924 6.37611,12.7924 6.37611,-1.20765 -0.623889,-1.20765 " />
     </clipPath>
     <g
        id="text619"
@@ -1661,12 +1663,12 @@
   <g
      id="g628"
      clip-path="url(#cp84)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp84">
       <polygon
          id="polygon623"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1677,12 +1679,12 @@
   <g
      id="g635"
      clip-path="url(#cp85)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp85">
       <polygon
          id="polygon630"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1693,12 +1695,12 @@
   <g
      id="g642"
      clip-path="url(#cp86)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp86">
       <polygon
          id="polygon637"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1709,12 +1711,12 @@
   <g
      id="g649"
      clip-path="url(#cp87)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp87">
       <polygon
          id="polygon644"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1725,12 +1727,12 @@
   <g
      id="g656"
      clip-path="url(#cp88)"
-     transform="translate(422.3188,57.125415)">
+     transform="translate(330.79338,57.125415)">
     <clipPath
        id="cp88">
       <polygon
          id="polygon651"
-         points="6.37611,12.8746 6.37611,-1.12541 -0.623889,-1.12541 -0.623889,12.8746 " />
+         points="-0.623889,12.8746 6.37611,12.8746 6.37611,-1.12541 -0.623889,-1.12541 " />
     </clipPath>
     <g
        id="text654"
@@ -1746,12 +1748,12 @@
   <g
      id="g663"
      clip-path="url(#cp89)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp89">
       <polygon
          id="polygon658"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1762,12 +1764,12 @@
   <g
      id="g670"
      clip-path="url(#cp90)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp90">
       <polygon
          id="polygon665"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1778,12 +1780,12 @@
   <g
      id="g677"
      clip-path="url(#cp91)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp91">
       <polygon
          id="polygon672"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1794,12 +1796,12 @@
   <g
      id="g684"
      clip-path="url(#cp92)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp92">
       <polygon
          id="polygon679"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1810,12 +1812,12 @@
   <g
      id="g691"
      clip-path="url(#cp93)"
-     transform="translate(422.3188,20.043183)">
+     transform="translate(330.79338,20.043183)">
     <clipPath
        id="cp93">
       <polygon
          id="polygon686"
-         points="6.37611,12.9568 6.37611,-1.04318 -0.623889,-1.04318 -0.623889,12.9568 " />
+         points="-0.623889,12.9568 6.37611,12.9568 6.37611,-1.04318 -0.623889,-1.04318 " />
     </clipPath>
     <g
        id="text689"
@@ -1831,12 +1833,12 @@
   <g
      id="g698"
      clip-path="url(#cp94)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp94">
       <polygon
          id="polygon693"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"
@@ -1847,12 +1849,12 @@
   <g
      id="g705"
      clip-path="url(#cp95)"
-     transform="translate(-72.305085,-13)">
+     transform="translate(-163.83051,-13)">
     <clipPath
        id="cp95">
       <polygon
          id="polygon700"
-         points="766,204 766,22 494,22 494,204 " />
+         points="494,204 766,204 766,22 494,22 " />
     </clipPath>
     <path
        inkscape:connector-curvature="0"

@@ -22,7 +22,14 @@ $$
 0&0&1
 \end{bmatrix}\begin{bmatrix}x\\y\\0\end{bmatrix}=\begin{bmatrix}x\\y\\0\end{bmatrix}
 $$
-两个矢量的和或者差$\vec{\boldsymbol{u}}\pm\vec{\boldsymbol{v}}=[u_x,u_y,u_z,0]\pm[v_x,v_y,v_z,0]=[u_x\pm v_x,u_y\pm v_y,u_z\pm v_z,0]$仍然是一个矢量，而两个点的差也是矢量，点和矢量的和或者差也是矢量
+两个矢量的和或者差
+$$
+\begin{aligned}
+\vec{\boldsymbol{u}}\pm\vec{\boldsymbol{v}}&=[u_x,u_y,u_z,0]\pm[v_x,v_y,v_z,0]\\
+&=[u_x\pm v_x,u_y\pm v_y,u_z\pm v_z,0]
+\end{aligned}
+$$
+仍然是一个矢量，而两个点的差也是矢量，点和矢量的和或者差也是矢量
 $$\begin{split}
 {vector}+{vector}&={vector} \\
 {point}-{point}&={vector} \\
@@ -31,7 +38,10 @@ $$\begin{split}
 \end{split}$$
 其次坐标表示的两个点的和也是有意义的，表示两个点的中点
 $$
-[x_1,y_1,1]+[x_2,y_2,1]=[x_1+x_2,y_1+y_2,2]=[\frac{x_1+x_2}{2}, \frac{y_1+y_2}{2}, 1]
+\begin{aligned}
+[x_1,y_1,1]+[x_2,y_2,1]&=[x_1+x_2,y_1+y_2,2]\\
+&=[\frac{x_1+x_2}{2}, \frac{y_1+y_2}{2}, 1]
+\end{aligned}
 $$
 
 ### 4.2 齐次矩阵表达

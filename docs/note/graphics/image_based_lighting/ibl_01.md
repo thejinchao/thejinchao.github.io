@@ -83,7 +83,10 @@ $$\begin{split}
 \end{split}$$
 其中
 $$
-\phi_i=2\pi\xi, \theta_i=\dfrac{\pi}{2}\xi
+\begin{aligned}
+\phi_i&=2\pi\xi\\
+\theta_i&=\dfrac{\pi}{2}\xi
+\end{aligned}
 $$
 $\xi$表示均匀分布在[0,1]之间的随机变量
 
@@ -101,7 +104,10 @@ $$\begin{split}
 \end{split}$$
 其中
 $$
-\phi_i=2\pi\xi, \theta_i=\arccos(1-\xi)
+\begin{aligned}
+\phi_i&=2\pi\xi\\
+\theta_i&=\arccos(1-\xi)
+\end{aligned}
 $$
 ````cpp :no-line-numbers
 vec3 irradiance = vec3(0.0);  
