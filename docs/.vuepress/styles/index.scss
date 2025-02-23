@@ -24,13 +24,22 @@ table.gridtable td {
 }
 
 table.invisibletable {
-    border-collapse: collapse;
     border: 0px;
-    width: 100%;
+}
+
+table.invisibletable tr {
+    border: 0px;
+    background-color: #ffffff00;
+}
+
+table.invisibletable th {
+    border: 0px;
+    padding: 0px;
+    background-color: #ffffff00;
 }
 
 table.invisibletable td {
     border: 0px;
     padding: 0px;
-    background-color: #ffffff;
+    background-color: #ffffff00;
 }

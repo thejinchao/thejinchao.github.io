@@ -16,7 +16,7 @@ JPEG能够获得如此高的压缩比是因为使用了有损压缩技术，所�
 ### 步骤一：图像分割
 ----
 JPEG算法的第一步，图像被分割成大小为8X8的小块，这些小块在整个压缩过程中都是单独被处理的。后面我们会以一张非常经典的图为例，这张图片名字叫做Lenna，据说是世界上第一张JPG图片，这张图片自从诞生之日开始，就和图像处理结下渊源，陪伴了无数理工宅男度过了的一个个不眠之夜，可谓功勋卓著，感兴趣的朋友可以在[这里](http://en.wikipedia.org/wiki/Lenna)了解到这张图片的故事。  
-<p align="center">
+<p align="center" width="100%">
 <img src="/images/2014/08/Lenna.png" width="40%">
 <img src="/images/2014/08/jpeg_01.jpg" width="40%">
 </p>
@@ -24,7 +24,9 @@ JPEG算法的第一步，图像被分割成大小为8X8的小块，这些小块�
 ### 步骤二：颜色空间转换RGB->YCbCr
 ----
 所谓“颜色空间”，是指表达颜色的数学模型，比如我们常见的“RGB”模型，就是把颜色分解成红绿蓝三种分量，这样一张图片就可以分解成三张灰度图，数学表达上，每一个8X8的图案，可以表达成三个8X8的矩阵，其中的数值的范围一般在[0,255]之间。  
+
 ![](/images/2014/08/RGB_YCBCR.png)
+
 不同的颜色模型各有不同的应用场景，例如RGB模型适合于像显示器这样的自发光图案，而在印刷行业，使用油墨打印，图案的颜色是通过在反射光线时产生的，通常使用CMYK模型，而在JPEG压缩算法中，需要把图案转换成为YCbCr模型，这里的Y表示亮度(Luminance)，Cb和Cr分别表示绿色和红色的“色差值”。  
 “色差”这个概念起源于电视行业，最早的电视都是黑白的，那时候传输电视信号只需要传输亮度信号，也就是Y信号即可，彩色电视出现之后，人们在Y信号之外增加了两条色差信号以传输颜色信息，这么做的目的是为了兼容黑白电视机，因为黑白电视只需要处理信号中的Y信号即可。  
 根据三基色原理，人们发现红绿蓝三种颜色所贡献的亮度是不同的，绿色的“亮度”最大，蓝色最暗，设红色所贡献的亮度的份额为$K_R$，蓝色贡献的份额为$K_B$，那么亮度为  
@@ -51,16 +53,29 @@ C_r&=0.5R-0.4187G-0.0813B
 \end{aligned}
 $$  
 YCbCr模型广泛应用在图片和视频的压缩传输中，比如你可以留意一下电视或者DVD后面的接口，就可以发现色差接口。  
-<p align="center">
-<img src="/images/2014/08/jpeg_14.jpg">
-</p>  
-这是有道理的，还记得我们在文章开始时提到的有损压缩的基本原理吗？有损压缩首先要做的事情就是“把重要的信息和不重要的信息分开”，YCbCr恰好能做到这一点。对于人眼来说，图像中明暗的变化更容易被感知到，这是由于人眼的构造引起的。视网膜上有两种感光细胞，能够感知亮度变化的视杆细胞，以及能够感知颜色的视锥细胞，由于视杆细胞在数量上远大于视锥细胞，所以我们更容易感知到明暗细节。比如说下面这张图  
 
-![](/images/2014/08/jpeg_15.jpg)
-<p align="center">
-<img src="/images/2014/08/jpeg_16.png" width="30%">
-<img src="/images/2014/08/jpeg_17.png" width="30%">
-<img src="/images/2014/08/jpeg_18.png" width="30%">
-</p>
+![](/images/2014/08/jpeg_14.jpg)
+
+这是有道理的，还记得我们在文章开始时提到的有损压缩的基本原理吗？有损压缩首先要做的事情就是“把重要的信息和不重要的信息分开”，YCbCr恰好能做到这一点。对于人眼来说，图像中明暗的变化更容易被感知到，这是由于人眼的构造引起的。视网膜上有两种感光细胞，能够感知亮度变化的视杆细胞，以及能够感知颜色的视锥细胞，由于视杆细胞在数量上远大于视锥细胞，所以我们更容易感知到明暗细节。比如说下面这张图  
+<div align="center">
+<table class="invisibletable" style="width:620px;">
+<tbody>
+<tr>
+<td colspan="5">
+<center>
+<img src="/images/2014/08/jpeg_15.jpg" >
+</center>
+</td>
+</tr>
+<tr>
+<td><figure style="width: 200px; margin: 0px;"><img src="/images/2014/08/jpeg_16.png" ><figcaption >Y</figcaption></figure></td>
+<td style="width: 10px;"></td>
+<td><figure style="width: 200px; margin: 0px;"><img src="/images/2014/08/jpeg_17.png" ><figcaption >Cb</figcaption></figure></td>
+<td style="width: 10px;"></td>
+<td><figure style="width: 200px; margin: 0px;"><img src="/images/2014/08/jpeg_18.png" ><figcaption >Cr</figcaption></figure></td>
+</tr>
+</tbody>
+</table>
+</div>
 可以明显看到，亮度图的细节更加丰富。JPEG把图像转换为YCbCr之后，就可以针对数据得重要程度的不同做不同的处理。这就是为什么JPEG使用这种颜色空间的原因。  
 
