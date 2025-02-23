@@ -18,8 +18,18 @@
  * [Turbolink](https://github.com/thejinchao/turbolink)
 
 ## 个人笔记
- * [数学相关](/note/math/)
- * [密码学](/note/cryptography/)
- * [图形学](/note/graphics/)
+ * 数学相关
+   * [常用数学符号](/note/math/symbol.md)
+   * [群](/note/math//group.md)
+   * 数论（[一](/note/math//number_theory_1.md), [二](/note/math/number_theory_2.md), [三](/note/math/number_theory_3.md)）
+   * [概率](/note/math/probability.md)
+ * 密码学
+   * [RSA](/note/cryptography/rsa.md)
+   * [抛币协议](/note/cryptography/flip_coin.md)
+   * [智能扑克](/note/cryptography/mental_poker.md)
+ * 图形学
+   * [数学基础](/note/graphics/math/)
+   * [光照模型](/note/graphics/illumination_model/)
+   * [环境光渲染](/note/graphics/image_based_lighting/)
  * 编程语言
    * [JavaScript](/note/language/javascript/)

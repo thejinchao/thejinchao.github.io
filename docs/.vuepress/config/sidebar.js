@@ -96,6 +96,7 @@ module.exports = [
 						text: '光照模型',
 						collapsible: true,
 						children: [
+							{text: '传统光照模型', link: '/note/graphics/illumination_model/classic/illumination_model_01'},
 							{text: '光度学', link: '/note/graphics/illumination_model/luminosity/luminosity'},
 							{text: '双向反射分布函数\(BRDF\)', link: '/note/graphics/illumination_model/BRDF/BRDF'},
 							{text: '微平面理论(一)', link: '/note/graphics/illumination_model/microfacets/microfacets_1'},
