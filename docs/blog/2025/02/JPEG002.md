@@ -65,7 +65,8 @@ $$
 奥妙之处在于，经过DCT，数据中隐藏的规律被发掘了出来,杂乱的数据被转换成几个工整变化的数据。DCT转换后的数组中第一个是一个直线数据，因此又被称为“直流数据”，简称DC，后面的数据被称为“交流数据”，简称AC，这个称呼起源于信号分析中的术语。  
 在JPEG压缩过程中，经过颜色空间的转换，每一个8X8的图像块，在数据上表现为3个8X8的矩阵，紧接着我们对这三个矩阵做一个二维的DCT转换，二维的DCT转换公式为  
 $$\small{\begin{aligned}
-F(u,v)&=\alpha(u)\cdot\alpha(v)\cdot \sum_{x=0}^{7}\sum_{y=0}^{7}f(x,y)\cos\left(\frac{2x+1}{16}u\pi\right)\cos\left(\frac{2y+1}{16}v\pi\right)\quad u,v=0,1,2,\ldots,7\\
+F(u,v)&=\alpha(u)\cdot\alpha(v)\cdot \sum_{x=0}^{7}\sum_{y=0}^{7}f(x,y)\cos\left(\frac{2x+1}{16}u\pi\right)\cos\left(\frac{2y+1}{16}v\pi\right)\\
+u,v &=0,1,2,\ldots,7\\
 \alpha(u)&=\begin{cases}1/\sqrt{8}, & \text{when u}=0\\
 1/2, & \text{when u}\neq 0\end{cases}
 \end{aligned}}\tag{2.4}

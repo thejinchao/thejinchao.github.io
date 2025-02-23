@@ -58,21 +58,22 @@ YCbCr模型广泛应用在图片和视频的压缩传输中，比如你可以留
 
 这是有道理的，还记得我们在文章开始时提到的有损压缩的基本原理吗？有损压缩首先要做的事情就是“把重要的信息和不重要的信息分开”，YCbCr恰好能做到这一点。对于人眼来说，图像中明暗的变化更容易被感知到，这是由于人眼的构造引起的。视网膜上有两种感光细胞，能够感知亮度变化的视杆细胞，以及能够感知颜色的视锥细胞，由于视杆细胞在数量上远大于视锥细胞，所以我们更容易感知到明暗细节。比如说下面这张图  
 <div align="center">
-<table class="invisibletable" style="width:620px;">
+<table class="invisibletable">
 <tbody>
 <tr>
 <td colspan="5">
-<center>
-<img src="/images/2014/08/jpeg_15.jpg" >
-</center>
+
+![](/images/2014/08/jpeg_15.jpg)
+
 </td>
 </tr>
 <tr>
-<td><figure style="width: 200px; margin: 0px;"><img src="/images/2014/08/jpeg_16.png" ><figcaption >Y</figcaption></figure></td>
-<td style="width: 10px;"></td>
-<td><figure style="width: 200px; margin: 0px;"><img src="/images/2014/08/jpeg_17.png" ><figcaption >Cb</figcaption></figure></td>
-<td style="width: 10px;"></td>
-<td><figure style="width: 200px; margin: 0px;"><img src="/images/2014/08/jpeg_18.png" ><figcaption >Cr</figcaption></figure></td>
+<td>
+<figure style="margin: 5px;"><img src="/images/2014/08/jpeg_16.png" ><figcaption >Y</figcaption></figure></td>
+<td ></td>
+<td><figure style="margin: 5px;"><img src="/images/2014/08/jpeg_17.png" ><figcaption >Cb</figcaption></figure></td>
+<td ></td>
+<td><figure style="margin: 5px;"><img src="/images/2014/08/jpeg_18.png" ><figcaption >Cr</figcaption></figure></td>
 </tr>
 </tbody>
 </table>
