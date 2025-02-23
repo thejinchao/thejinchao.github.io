@@ -34,11 +34,11 @@ $$
 \displaystyle{F(x)=P(X\leq x)}
 $$  
 以最为常见的均匀分布概率为例，设均匀分布的随机变量$X$的取值范围是$[a,b]$，那么它的累计分布函数以及函数图像是  
-
-<table align="center" class="invisibletable">
+<div align="center">
+<table class="invisibletable">
 <tbody>
 <tr>
-<td style="vertical-align:middle; border:0px;">
+<td>
 
 $$ 
 F(x)=\begin{cases} 
@@ -49,12 +49,13 @@ F(x)=\begin{cases}
 $$
 
 </td>
-<td style="vertical-align:middle; border:0px;">
+<td>
 <img src="/images/2015/05/rnd_03.gif">
 </td>
 </tr><tr>
 </tr></tbody>
 </table>
+</div>
 
 对于一个累计分布函数，符合以下规律  
  * $0\le F(x)\le 1$

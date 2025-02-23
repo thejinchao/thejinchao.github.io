@@ -20,7 +20,9 @@ export default defineUserConfig({
 	description: '理性派，数学，物理，程序',
 	plugins: [
 		markdownMathPlugin({
-		// options
+			// options
+			type: 'mathjax',
+			output: 'chtml'
 		}),
 		
 		markdownImagePlugin({
