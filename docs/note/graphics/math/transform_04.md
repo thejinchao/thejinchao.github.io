@@ -188,8 +188,11 @@ $$
 $$
 一般来说，当针对一个空间点做矩阵转换时，如果$\boldsymbol{M}[u_x, u_y, u_z, 1]^T=[v_x,v_y,v_z,1]^T$，那么
 $$
-(k\boldsymbol{M})[u_x, u_y, u_z, 1]^T=k[v_x,v_y,v_z,1]^T=[kv_x,kv_y,kv_z,k]^T=[v_x,v_y,v_z,1]^T
-$$
+\begin{aligned}
+(k\boldsymbol{M})[u_x, u_y, u_z, 1]^T&=k[v_x,v_y,v_z,1]^T\\
+&=[kv_x,kv_y,kv_z,k]^T\\
+&=[v_x,v_y,v_z,1]^T
+\end{aligned}$$
 可知$k\boldsymbol{M}$在针对空间点转换矩阵中等同于$\boldsymbol{M}$，所以为了表达方便，经常将上面得到的这个矩阵乘以-1，得到
 $$
 \boldsymbol{M}_{\text{persp}\rightarrow\text{ccv}}=\begin{bmatrix}
