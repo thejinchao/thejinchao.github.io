@@ -47,7 +47,11 @@ module.exports = [
 		text: '开源项目',
 		collapsible: true,
 		children: [
-			{text: "TurboLink", link: 'https://github.com/thejinchao/turbolink' }
+			{text: "TurboLink", link: 'https://github.com/thejinchao/turbolink' },
+			{text: "TinyEncrypt", link: 'https://github.com/thejinchao/TinyEncrypt' },
+			{text: "UnrealStyleGuide", link: 'https://github.com/thejinchao/ue5-style-guide' },
+			{text: "AxTrace", link: 'https://github.com/thejinchao/AxTrace' },
+			{text: "Cyclone", link: 'https://github.com/thejinchao/cyclone' }
 		],
 	},
 	{
