@@ -8,7 +8,16 @@ const navbar_def = require('./config/nav.js');
 const sidebar_def = require('./config/sidebar.js');
 
 export default defineUserConfig({
-	bundler: viteBundler(),
+	bundler: viteBundler({
+		viteOptions: {
+			server: {
+				allowedHosts: [
+					"vuepress-dev.thecodeway.com"
+				]
+			}
+		},
+		vuePluginOptions: {}
+	}),
 	theme: defaultTheme({
 		logo: 'favicon.png',
 		navbar: navbar_def,
