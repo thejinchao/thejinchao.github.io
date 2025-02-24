@@ -33,7 +33,12 @@ $$\begin{split}
 \approx&\dfrac{1}{\pi}\dfrac{2\pi}{n_1}\dfrac{\pi}{2n_2}\sum_{j=0}^{n_1}\sum_{i=0}^{n_2}L_i(\phi_j,\theta_i)\cos(\theta_i)\sin(\theta_i) \\
 =&\dfrac{\pi}{n_1n_2}\sum_{j=0}^{n_1}\sum_{i=0}^{n_2}L_i(\phi_j,\theta_i)\cos(\theta_i)\sin(\theta_i)
 \end{split}$$
-其中：$\phi_j=\dfrac{j}{n_1}2\pi \\ \theta_i=\dfrac{i}{n_2}\dfrac{\pi}{2}$
+其中：
+$$\begin{aligned}
+\phi_j=\dfrac{j}{n_1}2\pi \\
+\theta_i=\dfrac{i}{n_2}\dfrac{\pi}{2}
+\end{aligned}
+$$
 代码:
 ````cpp :no-line-numbers
 vec3 irradiance = vec3(0.0);  
