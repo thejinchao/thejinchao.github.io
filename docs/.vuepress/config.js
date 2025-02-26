@@ -23,7 +23,13 @@ export default defineUserConfig({
 		navbar: navbar_def,
 		sidebar: sidebar_def,
 		sidebarDepth: 4,
+		lastUpdated: false,
+		repo: "https://github.com/thejinchao/thejinchao.github.io",
+		colorMode: "light",
 	}),
+	head:[
+		['link', { rel: 'icon', href: 'favicon.png' }]
+	],
 	lang : 'zh-CN',
 	title: '我的博客和笔记',
 	description: '理性派，数学，物理，程序',
