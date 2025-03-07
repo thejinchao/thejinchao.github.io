@@ -65,5 +65,3 @@ $$
 上面是使用javascript实现的互动曲线，核心代码如下
 
 @[code js :no-line-numbers](@public/js/bezier_app.js)
-
-## End
