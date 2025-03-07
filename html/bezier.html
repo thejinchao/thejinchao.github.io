@@ -1,0 +1,51 @@
+<html>
+<head>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
+<script src="/js/bezier_app.js"></script>
+<script src="/js/bezier_base.js"></script>
+</head>
+<body style="margin:0px; padding:0px; overflow: hidden">
+<script>
+
+var lineSegments;
+var quadBezierLine;
+var P0={x:10.0, y:10.0}, P1={x:260.0, y:235.0}, P2={x:300.0, y:80.0};
+
+function setup() {
+	const searchParams = new URLSearchParams(window.location.search);
+	let uniformSpeed = searchParams.get('uniformSpeed')!=0;
+	
+	canvas = createCanvas(windowWidth, windowHeight);
+
+	lineSegments = new LineSegments();
+	lineSegments.addPoint(P0.x, P0.y);
+	lineSegments.addPoint(P1.x, P1.y);
+	lineSegments.addPoint(P2.x, P2.y);
+	
+	quadBezierLine = new QuadBezierLine(P0, P1, P2, 20, uniformSpeed)
+}
+
+function draw() {
+	clear();
+	background('white');
+	noStroke();
+
+	lineSegments.draw();
+	quadBezierLine.draw()
+}
+
+function mousePressed(){
+	lineSegments.handleMousePressed();
+}
+
+function mouseDragged(){
+	lineSegments.handleMouseDragged();
+}
+
+function mouseReleased(){
+	lineSegments.handleMouseReleased();
+	quadBezierLine.updatePoints(lineSegments.points[0], lineSegments.points[1], lineSegments.points[2]);
+}
+</script>
+</body>
+</html>
