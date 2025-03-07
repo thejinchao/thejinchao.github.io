@@ -3,9 +3,11 @@ import { defaultTheme } from '@vuepress/theme-default'
 import { markdownMathPlugin } from '@vuepress/plugin-markdown-math'
 import { markdownImagePlugin } from '@vuepress/plugin-markdown-image'
 import { defineUserConfig } from 'vuepress'
+import { getDirname, path } from 'vuepress/utils'
 
 const navbar_def = require('./config/nav.js');
 const sidebar_def = require('./config/sidebar.js');
+const __dirname = getDirname(import.meta.url)
 
 export default defineUserConfig({
 	bundler: viteBundler({
@@ -37,7 +39,7 @@ export default defineUserConfig({
 		markdownMathPlugin({
 			// options
 			type: 'mathjax',
-			output: 'chtml'
+			output: 'svg'
 		}),
 		
 		markdownImagePlugin({
@@ -52,6 +54,10 @@ export default defineUserConfig({
 		}),
 	],
 	markdown: {
-		lineNumbers: false
+		lineNumbers: false,
+		importCode: {
+			handleImportPath: (str) =>
+			str.replace(/^@public/, path.resolve(__dirname, 'public/')),
+		},
 	}
 })
