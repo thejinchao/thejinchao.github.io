@@ -1,8 +1,8 @@
 class QuadBezierLine {
-	constructor(_p0, _p1, _p2, _step, _uniformSpeed) {
+	constructor(_p0, _p1, _p2, _step, _uniformSpeedMode) {
 		this.step=_step;
 		this.points=[];
-		this.uniformSpeed=_uniformSpeed;
+		this.uniformSpeedMode=_uniformSpeedMode;
 		this.updatePoints(_p0, _p1, _p2);
 	}
 	
@@ -25,16 +25,16 @@ class QuadBezierLine {
 		return (temp5 + temp6) / (8 * Math.pow(this.A, 1.5));
 	}
 	
-	//X(n+1) = Xn - F(Xn)/F'(Xn)
-	invertLength(t, len) {
-		let t1 = t, t2;
+	//u'=u-(Length(u)-len)/Speed(u)
+	invertLength(u0, len) {
+		let u1 = u0, u2;
 		do {
-			t2 = t1 - (this.length(t1) - len) / this.speed(t1);
-			if (Math.abs(t1 - t2) < 0.000001)
+			u2 = u1 - (this.length(u1) - len) / this.speed(u1);
+			if (Math.abs(u1 - u2) < 0.000001)
 				break;
-			t1 = t2;
+			u1 = u2;
 		} while (true);
-		return t2;
+		return u2;
 	}
 	
 	updatePoints(_p0, _p1, _p2) {
@@ -57,8 +57,7 @@ class QuadBezierLine {
 		for (let index = 1; index < this.step; index++) {  
 			let t = index / this.step;
 			
-			if(this.uniformSpeed) {
-				//根据 L 函数的反函数，求得 l 对应的 t 值
+			if(this.uniformSpeedMode) {
 				t = this.invertLength(t, totalLength*t);
 			}
 			
