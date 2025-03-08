@@ -1,8 +1,8 @@
 ---
-title: "匀速贝塞尔曲线运动的实现"
+title: "匀速贝塞尔曲线运动的实现(一)"
 tags: 程序 算法
 ---
-# 匀速贝塞尔曲线运动的实现
+# 匀速贝塞尔曲线运动的实现(一)
 
 贝塞尔曲线([Bézier curve](https://en.wikipedia.org/wiki/B%C3%A9zier_curve))是一种常用的曲线，以最简单的二次贝塞尔曲线为例，通常以如下方式构建，给定二维平面上的固定点$P_0$, $P_1$, $P_2$，用$B(t)$表示该条曲线 
 $$
@@ -40,7 +40,7 @@ $$
 $$
 \begin{aligned}
 L(t)&=\int_0^t\sqrt{Ax^2+Bx+C}dx\\
-&=\frac{1}{8A^{3/2}}\biggl(2\sqrt{A}\left[2At\sqrt{At^2+Bt+C}+B\left(\sqrt{At^2+Bt+C}-\sqrt{C}\right)\right] \\
+&=\frac{1}{8A^{3/2}}\biggl(2\sqrt{A}\left[(2At+B)\sqrt{At^2+Bt+C}-B\sqrt{C}\right] \\
 &\quad+(B^2-4AC)\left[ln(B+2\sqrt{AC})-ln\left(B+2At+2\sqrt{A}\sqrt{At^2+Bt+C}\right)\right]\biggr)
 \end{aligned}
 $$  
@@ -66,4 +66,4 @@ $$
 
 上面是使用javascript实现的互动曲线，核心代码如下
 
-@[code js :no-line-numbers](@public/js/bezier_app.js)
+@[code js :no-line-numbers](@public/js/bezier_quad.js)

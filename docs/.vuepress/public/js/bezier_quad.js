@@ -12,9 +12,9 @@ class QuadBezierLine {
 	}
 	
 	//Length(t) = Integrate[Speed[t], t]
-	//Length(t_)=((2*Sqrt[A]*(2*A*t*Sqrt[C+t*(B+A*t)]+B*(Sqrt[C + t*(B + A*t)]-Sqrt[C])) +
-	//	(B^2-4*A*C)(Log[B+2*Sqrt[A]*Sqrt[C]]-Log[B+2*A*t+2*Sqrt[A]*Sqrt[C+t*(B+A*t)]]))/
-	//	(8* A^(3/2)));
+	//Length(t_) = ((2*Sqrt[A]*((2*A*t + B)*Sqrt[A*t^2 + B*t + C] - B*Sqrt[C]) +
+	//	(B^2 - 4*A*C)*(Log[B + 2*Sqrt[A]*Sqrt[C]] - 
+	//	Log[B + 2*A*t + 2*Sqrt[A]*Sqrt[A*t^2 + B*t + C]]))/(8*A^(3/2)))
 	length(t) {
 		let temp1 = Math.sqrt(this.C + t * (this.B + this.A * t));
 		let temp2 = (2 * this.A * t * temp1 + this.B * (temp1 - Math.sqrt(this.C)));
