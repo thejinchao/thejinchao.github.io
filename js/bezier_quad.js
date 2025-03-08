@@ -17,8 +17,8 @@ class QuadBezierLine {
 	//	Log[B + 2*A*t + 2*Sqrt[A]*Sqrt[A*t^2 + B*t + C]]))/(8*A^(3/2)))
 	length(t) {
 		let temp1 = Math.sqrt(this.C + t * (this.B + this.A * t));
-		let temp2 = (2 * this.A * t * temp1 + this.B * (temp1 - Math.sqrt(this.C)));
-		let temp3 = Math.log(this.B + 2 * Math.sqrt(this.A) * Math.sqrt(this.C));
+		let temp2 = (2 * this.A * t + this.B) * temp1 - this.B * Math.sqrt(this.C);
+		let temp3 = Math.log(this.B + 2 * Math.sqrt(this.A * this.C));
 		let temp4 = Math.log(this.B + 2 * this.A * t + 2 * Math.sqrt(this.A) * temp1);
 		let temp5 = 2 * Math.sqrt(this.A) * temp2;
 		let temp6 = (this.B * this.B - 4 * this.A * this.C) * (temp3 - temp4);
