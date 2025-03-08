@@ -14,4 +14,4 @@
  * [如何计算线段和圆的交点](/blog/2025/02/SegmentCircle.md)
  * [一道数学趣题](/blog/2025/02/Ellipse.md)
  * [斐波那契数列和1/89](/blog/2025/02/Fibonacci.md)
- * [匀速贝塞尔曲线运动实现](/blog/2025/03/BezierLine.md)
+ * [匀速贝塞尔曲线运动实现](/blog/2025/03/BezierLine01.md)

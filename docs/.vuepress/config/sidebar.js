@@ -41,7 +41,7 @@ module.exports = [
 			"2025/02/SegmentCircle.md",
 			"2025/02/Ellipse.md",
 			"2025/02/Fibonacci.md",
-			"2025/03/BezierLine.md"
+			"2025/03/BezierLine01.md"
 		]
 	},
 	{
