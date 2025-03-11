@@ -41,7 +41,14 @@ module.exports = [
 			"2025/02/SegmentCircle.md",
 			"2025/02/Ellipse.md",
 			"2025/02/Fibonacci.md",
-			"2025/03/BezierLine01.md"
+			{
+				text: '匀速贝塞尔曲线运动的实现',
+				collapsible: true,
+				children: [
+					{ text: "Part1", link: "2025/03/BezierLine01.md" },
+					{ text: "Part2", link: "2025/03/BezierLine02.md" }
+				]
+			}
 		]
 	},
 	{
