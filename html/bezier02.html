@@ -1,0 +1,52 @@
+<html>
+<head>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
+<script src="/js/bezier_cubic.js"></script>
+<script src="/js/bezier_base.js"></script>
+</head>
+<body style="margin:0px; padding:0px; overflow: hidden">
+<script>
+
+var lineSegments;
+var cubicBezierLine;
+var P0={x:10.0, y:10.0}, P1={x:100.0, y:160.0},  P2={x:350.0, y:200.0}, P3={x:300.0, y:80.0};
+
+function setup() {
+	const searchParams = new URLSearchParams(window.location.search);
+	let uniformSpeed = searchParams.get('uniformSpeed')!=0;
+	
+	canvas = createCanvas(windowWidth, windowHeight);
+
+	lineSegments = new LineSegments();
+	lineSegments.addPoint(P0.x, P0.y);
+	lineSegments.addPoint(P1.x, P1.y);
+	lineSegments.addPoint(P2.x, P2.y);
+	lineSegments.addPoint(P3.x, P3.y);
+	
+	cubicBezierLine = new CubicBezierLine(P0, P1, P2, P3, 20, uniformSpeed)
+}
+
+function draw() {
+	clear();
+	background('white');
+	noStroke();
+
+	lineSegments.draw();
+	cubicBezierLine.draw()
+}
+
+function mousePressed(){
+	lineSegments.handleMousePressed();
+}
+
+function mouseDragged(){
+	lineSegments.handleMouseDragged();
+}
+
+function mouseReleased(){
+	lineSegments.handleMouseReleased();
+	cubicBezierLine.updatePoints(lineSegments.points[0], lineSegments.points[1], lineSegments.points[2], lineSegments.points[3]);
+}
+</script>
+</body>
+</html>
