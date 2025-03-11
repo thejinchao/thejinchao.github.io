@@ -14,7 +14,7 @@ $$
 
 如果$t$变量本身是线性变化的话，这条贝塞尔曲线的生成过程是并不是匀速的，通常都是两头快中间慢。 
 
-<iframe width="100%" height="270" frameborder=0 src="/html/bezier.html?uniformSpeed=0"></iframe>
+<iframe width="100%" height="270" frameborder=0 src="/html/bezier01.html?uniformSpeed=0"></iframe>
 
 可以看出中间的点较为密集，而两边则较为稀疏。
 如何得到匀速的贝塞尔曲线运动呢？比如我们在某款游戏中设计了一条贝塞尔曲线的路径，如何实现NPC匀速在这条路径上运动？​ 
@@ -62,7 +62,7 @@ u_{n+1}&=u_n-\frac{F(u_n)}{F'(u_n)}\\&=u_n-\frac{L(u_n)-L(1.0)t}{s(u_n)}
 $$  
 由于$t$和$u$相差不大，可以设$u_0=t$来开始求解，以下是修正后的匀速贝塞尔曲线
 
-<iframe width="100%" height="270" frameborder=0 src="/html/bezier.html?uniformSpeed=1"></iframe>
+<iframe width="100%" height="270" frameborder=0 src="/html/bezier01.html?uniformSpeed=1"></iframe>
 
 上面是使用javascript实现的互动曲线，核心代码如下
 
