@@ -28,6 +28,8 @@ export default defineUserConfig({
 		lastUpdated: false,
 		repo: "https://github.com/thejinchao/thejinchao.github.io",
 		colorMode: "light",
+		editLink : false,
+		contributors : false,
 	}),
 	head:[
 		['link', { rel: 'icon', href: 'favicon.png' }]
