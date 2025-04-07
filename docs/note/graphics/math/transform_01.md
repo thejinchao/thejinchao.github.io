@@ -178,3 +178,188 @@ c+(1-c)x^2& (1-c)xy-sz&(1-c)xz+sy\\
 (1-c)xz-sy&(1-c)yz+sx&c+(1-c)z^2
 \end{bmatrix}
 $$
+
+### 3.4 四元数
+
+#### 3.4.1 复数
+复数([Complex Number](https://simple.wikipedia.org/wiki/Complex_number))可以表达为
+$$\begin{aligned}
+z=a+bi\\
+a,b\in\mathbb{R}, i^2=-1
+\end{aligned}$$
+其中$a$被成为实部(Real Part), $b$被称为虚部(Imaginary Part), 复数的基本运算规律如下，设$z_1=a_1+b_1i, z_2=a_2+b_2i$，那么
+$$
+\begin{aligned}
+z_1+z_2&=(a_1+a_2)+(b_1+b_2)i\\
+z_1-z_2&=(a_1-a_2)+(b_1-b_2)i\\
+z_1z_2&=(a_1a_2-b_1b_2)+(a_1b_2+a_2b_1)i
+\end{aligned}
+$$
+
+#### 3.4.2 四元数定义
+四元数([Quaternion](https://en.wikipedia.org/wiki/Quaternion))可以视为对复数的扩充。 四元数有1个实部，3个虚部，形式如下
+$$
+q=s+xi+yj+zk
+$$
+其中$s,x,y,z\in\mathbb{R}$，$i,j,k$满足如下计算性质
+$$
+\begin{aligned}
+i^2&=j^2=k^2=ijk=-1\\
+ij&=k\quad ji=-k\\
+jk&=i\quad kj=-i\\
+ki&=j\quad ik=-j\\
+\end{aligned}
+$$
+汇总到如下表格中 
+|  | $i$ | $j$ | $k$ |
+| :--- | :--- | :--- | :--- |
+| $i$ | $-1$ | $k$ | $-j$ |
+| $j$ | $-k$ | $-1$ | $i$ |
+| $k$ | $j$ | $-i$ | $-1$ |
+
+四元数也可以表达成将实数部和虚数部分开的形式，对于四元数$q=s+xi+yj+zk$，设$\vec{v}=[x,y,z]^T$，则这个四元数可以表达为
+$$
+q=[s,\vec{v}]
+$$
+
+#### 3.4.3 四元数的基本运算
+对于两个四元数$q_1=[s_1,\vec{v_1}], q_2=[s_2,\vec{v_2}]$，基本运算规律如下
+$$
+\begin{aligned}
+q_1+q_2&=[s_1+s_2,\quad \vec{v_1}+\vec{v_2}]\\
+q_1-q_2&=[s_1-s_2,\quad \vec{v_1}-\vec{v_2}]\\
+q_1q_2&=[s_1s_2-\vec{v_1}\cdot\vec{v_2},\quad s_1\vec{v_2}+s_2\vec{v_1}+\vec{v_1}\times\vec{v_2}]
+\end{aligned}
+$$
+四元数的乘法满足满足结合律，但不满足交换律
+$$
+\begin{aligned}
+(q_1q_2)q_3&=q_1(q_2q_3)\\
+q_1q_2&\neq q_2q_1
+\end{aligned}
+$$
+但如果$q_1,q_2$中的两个向量部分平行，由于$\vec{v_1}\times\vec{v_2}=0$，易证
+$$
+q_1q_2=q_2q_1\quad(when\quad \vec{v_1}\parallel\vec{v_2})
+\tag{3.4.3.1}
+$$
+定义四元数$q=s+xi+yj+zk$的模为
+$$
+\|q\|=\sqrt{s^2+x^2+y^2+z^2}
+$$
+如果一个四元数的模为1，那么称这个四元数为单位四元数
+
+#### 3.4.4 四元数的共轭和逆
+定义四元数$q=[s, \vec{v}]$的共轭四元数$\overline{q}$为
+$$
+\overline{q}=[s, -\vec{v}]
+$$
+共轭四元数满足如下运算
+$$
+q\overline{q}=\overline{q}q=\|q\|^2\tag{3.4.4.1}
+$$
+对于单位四元数，有$q\overline{q}=1$  
+定义四元数$q$的逆为$q^{-1}$，满足$qq^{-1}=1$，由公式3.4.4.1可知
+$$
+qq^{-1}=1=\frac{q\overline{q}}{\|q\|}
+$$
+所以
+$$
+q^{-1}=\frac{\overline{q}}{\|q\|^2}\tag{3.4.4.2}
+$$
+四元数的逆满足如下运算
+$$
+(q_1q_2)^{-1}=q_2^{-1}q_1^{-1}
+$$
+#### 3.4.5 四元数与向量
+如果一个四元数的实部为0，那么称之为纯四元数(Pure Quaternion)，由于纯四元数仅有3个虚部，可以将一个3D向量转换为一个纯四元数。设$q_v=[0,\vec{v}]$，那么
+$$\begin{aligned}
+\lambda q_v&=[0, \lambda\vec{v}]\\
+q_{u}\pm q_{v}&=[0, \vec{u}\pm\vec{v}]
+\end{aligned}$$
+由此可见，向量的线性运算，都可以使用与之对应的纯四元数来代替。但乘法则不同，设两个纯四元数$q_u=[0, \vec{u}], q_v=[0, \vec{v}]$，相乘后结果为
+$$
+q_uq_v=[-\vec{u}\cdot\vec{v}, \vec{u}\times\vec{v}]\tag{3.4.5.1}
+$$
+对于向量$\vec{v}$，记四元数$q(\theta, \vec{v})=[\cos\theta, \vec{v}\sin\theta]$，这种四元数有一些很有用的特性，首先如果$\vec{v}$是单位向量，那么$q(\theta, \vec{v})$是单位四元数，易证:
+$$
+\|q(\theta, \vec{v})\|=\sqrt{\cos^2\theta+\sin^2\theta(v_x^2+v_y^2+v_z^2)}=1
+$$
+另外
+$$\begin{aligned}
+q(\alpha, \vec{v})q(\theta, \vec{v})&=[\cos\alpha,\quad\vec{v}\sin\alpha][\cos\theta,\quad\vec{v}\sin\theta]\\
+&=[\cos\alpha\cos\theta-\sin\alpha\sin\theta,\quad\vec{v}(\cos\alpha\sin\theta+\cos\theta\sin\alpha)]\\
+&=[\cos(\alpha+\theta),\quad\vec{v}\sin(\alpha+\theta)]\\
+&=q(\alpha+\theta, \vec{v})\\
+q(\theta, \vec{v})^2&=q(2\theta, \vec{v})
+\end{aligned}\tag{3.4.5.2}$$
+
+#### 3.4.6 使用四元数表达旋转
+观察上面推导罗德里格旋转公式过程中的公式3.3.2.5，其中
+$$\begin{aligned}
+\vec{\boldsymbol{n}}\times\vec{\boldsymbol{v}}&=\vec{\boldsymbol{n}}\times(\boldsymbol{v_1}+\boldsymbol{v_2})\\
+&=\vec{\boldsymbol{n}}\times\vec{\boldsymbol{v_1}}+\vec{\boldsymbol{n}}\times\vec{\boldsymbol{v_2}}\\
+&=\vec{\boldsymbol{n}}\times\vec{\boldsymbol{v_2}}
+\end{aligned}$$
+带入公式3.3.2.5,可以得到
+$$
+R_n(\vec{\boldsymbol{v}}_2)=\vec{\boldsymbol{v}}_2\cos(\theta)+(\vec{\boldsymbol{n}}\times\vec{\boldsymbol{v_2}})\sin(\theta)\tag{3.4.6.1}
+$$
+设两个纯四元数$q_n, q_v$
+$$\begin{aligned}
+q_n&=[0, \vec{n}]\\
+q_{v2}&=[0, \vec{v_2}]
+\end{aligned}\tag{3.4.6.2}
+$$
+根据公式3.4.5.1
+$$\begin{aligned}
+q_nq_{v2}&=[-\vec{n}\cdot\vec{v_2},\quad\vec{n}\times\vec{v_2}]\\
+&=[0,\quad\vec{n}\times\vec{v_2}]
+\end{aligned}\tag{3.4.6.3}$$
+所以$q_nq_{v2}$是一个纯四元数  
+由于3.4.6.1中都是线性计算，将3.4.6.2和3.4.6.3代入其中，可以得到$R_n(\vec{\boldsymbol{v}}_2)$的四元数形式
+$$\begin{aligned}
+R_n(\vec{\boldsymbol{v}}_2)&=\vec{\boldsymbol{v}}_2\cos\theta+(\vec{\boldsymbol{n}}\times\vec{\boldsymbol{v_2}})\sin\theta\\
+&= q_v\cos\theta+q_nq_{v2}\sin\theta\\
+&=(\cos\theta+q_n\sin\theta)q_{v2}\\
+&=[\cos\theta, \vec{n}\sin\theta]q_{v2}\\
+&=q(\theta, \vec{n})q_{v2}
+\end{aligned}\tag{3.4.6.4}$$
+设一个新的四元数$p$
+$$
+p=q(\frac{\theta}{2}, \vec{n})=[\cos\frac{\theta}{2},\vec{n}\sin\frac{\theta}{2}]\tag{3.4.6.5}
+$$
+根据公式3.4.5.2，可以得到
+$$
+pp=q(\theta, \vec{n})
+$$
+且由于$p$是单位四元数，可以知道
+$$
+pp^{-1}=p\overline{p}=1
+$$
+将3.4.6.4带入3.3.2.4中，可以得到罗德里格旋转公式的四元数形式为
+$$\begin{aligned}
+R_n(\vec{\boldsymbol{v}})&=\vec{\boldsymbol{v}}_1+R_n(\vec{\boldsymbol{v}}_2)\\
+&=q_{v1}+q(\theta, \vec{n})q_{v2}\\
+&=p\overline{p}q_{v1}+ppq_{v2}
+\end{aligned}\tag{3.4.6.6}
+$$
+由于$\vec{n}\parallel\vec{v_1}$，根据公式3.4.3.1，可知$\overline{p}q_{v1}=q_{v1}\overline{p}$  
+由于$\vec{n}\perp\vec{v_2}$，可以推断出$pq_{v2}=q_{v2}\overline{p}$，证明如下：  
+$$\begin{aligned}
+pq_{v2}&=[\cos\frac{\theta}{2},\vec{n}\sin\frac{\theta}{2}][0, \vec{v_2}]\\
+&=[0,\vec{v_2}\cos\frac{\theta}{2}+(\vec{n}\times\vec{v_2})\sin\frac{\theta}{2}]\\
+q_{v2}\overline{p}&=[0, \vec{v_2}][\cos\frac{\theta}{2},-\vec{n}\sin\frac{\theta}{2}]\\
+&=[0,\vec{v_2}\cos\frac{\theta}{2}-(\vec{v_2}\times\vec{n})\sin\frac{\theta}{2}]
+\end{aligned}$$
+带入3.4.6.6，可以得到
+$$\begin{aligned}
+R_n(\vec{\boldsymbol{v}})&=pq_{v1}\overline{p}+pq_{v2}\overline{p}\\
+&=p(q_{v1}+q_{v2})\overline{p}\\
+&=pq_v\overline{p}
+\end{aligned}\tag{3.4.6.7}
+$$
+也就是说，对于向量$\vec{v}$，围绕单位向量$\vec{n}$旋转$\theta$，只需要构造四元数$[\cos\frac{\theta}{2}, \vec{n}\sin\frac{\theta}{2}]$，可以利用下面的等式计算旋转后的向量$\vec{v'}$
+$$
+[0, \vec{v'}]=[\cos\frac{\theta}{2}, \vec{n}\sin\frac{\theta}{2}][0,\vec{v}][\cos\frac{\theta}{2}, -\vec{n}\sin\frac{\theta}{2}]
+$$
