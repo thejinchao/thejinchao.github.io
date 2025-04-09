@@ -197,7 +197,7 @@ z_1z_2&=(a_1a_2-b_1b_2)+(a_1b_2+a_2b_1)i
 $$
 
 #### 3.4.2 四元数定义
-四元数([Quaternion](https://en.wikipedia.org/wiki/Quaternion))可以视为对复数的扩充。 四元数有1个实部，3个虚部，形式如下
+四元数([Quaternion](https://en.wikipedia.org/wiki/Quaternion))可以视为对复数的扩充，有1个实部，3个虚部，形式如下
 $$
 q=s+xi+yj+zk
 $$
@@ -231,14 +231,14 @@ q_1-q_2&=[s_1-s_2,\quad \vec{v_1}-\vec{v_2}]\\
 q_1q_2&=[s_1s_2-\vec{v_1}\cdot\vec{v_2},\quad s_1\vec{v_2}+s_2\vec{v_1}+\vec{v_1}\times\vec{v_2}]
 \end{aligned}
 $$
-四元数的乘法满足满足结合律，但不满足交换律
+四元数的乘法满足结合律，但不满足交换律
 $$
 \begin{aligned}
 (q_1q_2)q_3&=q_1(q_2q_3)\\
 q_1q_2&\neq q_2q_1
 \end{aligned}
 $$
-但如果$q_1,q_2$中的两个向量部分平行，由于$\vec{v_1}\times\vec{v_2}=0$，易证
+但如果$q_1,q_2$中的向量部分平行，由于$\vec{v_1}\times\vec{v_2}=0$，易证
 $$
 q_1q_2=q_2q_1\quad(when\quad \vec{v_1}\parallel\vec{v_2})
 \tag{3.4.3.1}
@@ -272,7 +272,7 @@ $$
 (q_1q_2)^{-1}=q_2^{-1}q_1^{-1}
 $$
 #### 3.4.5 四元数与向量
-如果一个四元数的实部为0，那么称之为纯四元数(Pure Quaternion)，由于纯四元数仅有3个虚部，可以将一个3D向量转换为一个纯四元数。设$q_v=[0,\vec{v}]$，那么
+如果一个四元数的实部为0，那么称之为纯四元数(Pure Quaternion)，由于纯四元数仅有3个虚部，可以将一个3D向量转换为一个纯四元数。记$q_v=[0,\vec{v}]$，那么
 $$\begin{aligned}
 \lambda q_v&=[0, \lambda\vec{v}]\\
 q_{u}\pm q_{v}&=[0, \vec{u}\pm\vec{v}]
@@ -305,7 +305,7 @@ $$\begin{aligned}
 $$
 R_n(\vec{\boldsymbol{v}}_2)=\vec{\boldsymbol{v}}_2\cos(\theta)+(\vec{\boldsymbol{n}}\times\vec{\boldsymbol{v_2}})\sin(\theta)\tag{3.4.6.1}
 $$
-设两个纯四元数$q_n, q_v$
+设两个纯四元数$q_n, q_{v2}$
 $$\begin{aligned}
 q_n&=[0, \vec{n}]\\
 q_{v2}&=[0, \vec{v_2}]
@@ -319,8 +319,7 @@ q_nq_{v2}&=[-\vec{n}\cdot\vec{v_2},\quad\vec{n}\times\vec{v_2}]\\
 所以$q_nq_{v2}$是一个纯四元数  
 由于3.4.6.1中都是线性计算，将3.4.6.2和3.4.6.3代入其中，可以得到$R_n(\vec{\boldsymbol{v}}_2)$的四元数形式
 $$\begin{aligned}
-R_n(\vec{\boldsymbol{v}}_2)&=\vec{\boldsymbol{v}}_2\cos\theta+(\vec{\boldsymbol{n}}\times\vec{\boldsymbol{v_2}})\sin\theta\\
-&= q_v\cos\theta+q_nq_{v2}\sin\theta\\
+\quad[0, R_n(\vec{\boldsymbol{v}}_2)]&= q_{v2}\cos\theta+q_nq_{v2}\sin\theta\\
 &=(\cos\theta+q_n\sin\theta)q_{v2}\\
 &=[\cos\theta, \vec{n}\sin\theta]q_{v2}\\
 &=q(\theta, \vec{n})q_{v2}
@@ -340,7 +339,7 @@ $$
 将3.4.6.4带入3.3.2.4中，可以得到罗德里格旋转公式的四元数形式为
 $$\begin{aligned}
 R_n(\vec{\boldsymbol{v}})&=\vec{\boldsymbol{v}}_1+R_n(\vec{\boldsymbol{v}}_2)\\
-&=q_{v1}+q(\theta, \vec{n})q_{v2}\\
+\quad[0,R_n(\vec{\boldsymbol{v}})]&=q_{v1}+q(\theta, \vec{n})q_{v2}\\
 &=p\overline{p}q_{v1}+ppq_{v2}
 \end{aligned}\tag{3.4.6.6}
 $$
@@ -354,7 +353,7 @@ q_{v2}\overline{p}&=[0, \vec{v_2}][\cos\frac{\theta}{2},-\vec{n}\sin\frac{\theta
 \end{aligned}$$
 带入3.4.6.6，可以得到
 $$\begin{aligned}
-R_n(\vec{\boldsymbol{v}})&=pq_{v1}\overline{p}+pq_{v2}\overline{p}\\
+\quad[0,R_n(\vec{\boldsymbol{v}})]&=pq_{v1}\overline{p}+pq_{v2}\overline{p}\\
 &=p(q_{v1}+q_{v2})\overline{p}\\
 &=pq_v\overline{p}
 \end{aligned}\tag{3.4.6.7}
