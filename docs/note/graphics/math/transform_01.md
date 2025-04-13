@@ -268,9 +268,16 @@ $$
 q^{-1}=\frac{\overline{q}}{\|q\|^2}\tag{3.4.4.2}
 $$
 四元数的逆满足如下运算
+$$\begin{aligned}
+(q_1q_2)^{-1}&=q_2^{-1}q_1^{-1}\\
+(q_1q_2\ldots q_n)^{-1}&=q_n^{-1}\ldots q_2^{-1}q_1^{-1}
+\end{aligned}\tag{3.4.4.3}
 $$
-(q_1q_2)^{-1}=q_2^{-1}q_1^{-1}
+易知，如果是单位四元数
 $$
+\overline{q_1q_2\ldots q_n}=\overline{q_n}\ldots \overline{q_2}\,\overline{q_1}\tag{3.4.4.4}
+$$
+
 #### 3.4.5 四元数与向量
 如果一个四元数的实部为0，那么称之为纯四元数(Pure Quaternion)，由于纯四元数仅有3个虚部，可以将一个3D向量转换为一个纯四元数。记$q_v=[0,\vec{v}]$，那么
 $$\begin{aligned}
@@ -361,4 +368,92 @@ $$
 也就是说，对于向量$\vec{v}$，围绕单位向量$\vec{n}$旋转$\theta$，只需要构造四元数$[\cos\frac{\theta}{2}, \vec{n}\sin\frac{\theta}{2}]$，可以利用下面的等式计算旋转后的向量$\vec{v'}$
 $$
 [0, \vec{v'}]=[\cos\frac{\theta}{2}, \vec{n}\sin\frac{\theta}{2}][0,\vec{v}][\cos\frac{\theta}{2}, -\vec{n}\sin\frac{\theta}{2}]
+$$
+
+#### 3.4.7 四元数组合
+使用四元数表达旋转有一个好处就是可以实现组合、插值等计算，例如一个向量$v$经过两次旋转变化，用四元数表示分别是$q_1,q_2$，那么
+$$\begin{aligned}
+q'&=q_2(q_1q_v\overline{q_1})\overline{q_2}\\
+&=(q_2q_1)q_v(\overline{q_1}\,\overline{q_2})\\
+\end{aligned}$$
+根据公式3.4.4.4，可知
+$$
+q'=(q_2q_1)q_v(\overline{q_2q_1})
+$$
+#### 3.4.7 四元数转换为旋转矩阵
+两个四元数相乘，可以转换为同等效果的矩阵，设两个四元数
+$$\begin{aligned}
+p=a+bi+cj+dk\\
+q=s+xi+yj+zk
+\end{aligned}$$
+那么
+$$\begin{aligned}
+pq=&(a+bi+cj+dk)(s+xi+yj+zk)\\
+=&(as−bx−cy−dz)+ \\
+&(bs+ax−dy+cz)i+\\
+&(cs+dx+ay−bz)j+\\
+&(ds−cx+by+az)k\\
+\end{aligned}$$
+可以将左乘四元数$p$视作左乘矩阵$L(p)$
+$$
+L(p)=\begin{bmatrix}
+a&-b&-c&-d \\
+b&a&−d&c \\
+c&d&a&−b \\
+d&−c&b&a \\
+\end{bmatrix}
+$$
+而右乘四元数$p$视作左乘矩阵$R(q)$
+$$
+Q(q)=\begin{bmatrix}
+a&−b&−c&−d \\
+b&a&d&-c \\
+c&-d&a&b \\
+d&c&-b&a \\
+\end{bmatrix}
+$$
+那么旋转一个向量$\vec{v}$对应的四元数$q_v$的过程可以写作
+$$
+pq_v\overline{p}=L(p)R(\overline{p})q_v
+$$
+或者
+$$
+pq_v\overline{p}=R(\overline{p})L(p)q_v
+$$
+容易证明，这两个结果是一样的，经计算
+$$\begin{aligned}
+L(p)R(\overline{p})q_v&=\begin{bmatrix}
+a&-b&-c&-d \\
+b&a&−d&c \\
+c&d&a&−b \\
+d&−c&b&a \\
+\end{bmatrix}\begin{bmatrix}
+a&b&c&d \\
+-b&a&-d&c \\
+-c&d&a&-b \\
+-d&-c&b&a \\
+\end{bmatrix}\begin{bmatrix}0\\v_x\\v_y\\v_z\end{bmatrix}\\
+&=\begin{bmatrix}
+1&0&0&0\\
+0&1-2c^2-2d^2&2bc-2ad&2ac+2bd\\
+0&2bc+2ad&1-2b^2-2d^2&2cd-2ab\\
+0&2bd-2ac&2ab+2cd&1-2b^2-2c^2
+\end{bmatrix}\begin{bmatrix}0\\v_x\\v_y\\v_z\end{bmatrix}
+\end{aligned}
+$$
+忽略掉四元数中为0的实数部分，可以将一个旋转四元数转换为旋转矩阵
+$$
+v'=\begin{bmatrix}
+1-2c^2-2d^2&2bc-2ad&2ac+2bd\\
+2bc+2ad&1-2b^2-2d^2&2cd-2ab\\
+2bd-2ac&2ab+2cd&1-2b^2-2c^2
+\end{bmatrix}\begin{bmatrix}v_x\\v_y\\v_z\end{bmatrix}
+$$
+其中
+$$\begin{aligned}
+a&=\cos(\theta/2)\\
+b&=\sin(\theta/2)n_x\\
+c&=\sin(\theta/2)n_y\\
+d&=\sin(\theta/2)n_z
+\end{aligned}
 $$
