@@ -20,7 +20,7 @@
 摄像机坐标系以观察点(eye)为原点，向前方向为-z轴，x轴指向右侧（右手坐标系）
 所以
 $$\begin{split}
-\vec{\boldsymbol{z}}'&=lookat-eye\\
+\vec{\boldsymbol{z}}'&=eye-lookat\\
 \vec{\boldsymbol{x}}'&=\vec{up}\times\vec{\boldsymbol{z}}' \\
 \vec{\boldsymbol{y}}'&=\vec{\boldsymbol{z}}'\times\vec{\boldsymbol{x}}' 
 \end{split}$$
@@ -135,7 +135,7 @@ $$
 #### 10.2.2 从立方体到标准观察体
 这一步相对简单很多，只要将观察体的中心的$z$挪到原点，做一定的放缩，并且将$z$轴反转即可
 $$\begin{split}
-\boldsymbol{M}_{\text{ortho}\rightarrow\text{ccv}}&=\begin{bmatrix}
+\boldsymbol{M}_{\text{ortho}\rightarrow\text{cvv}}&=\begin{bmatrix}
 1&0&0&0\\
 0&1&0&0\\
 0&0&-1&0\\
@@ -162,7 +162,7 @@ $$\begin{split}
 最终得到合并后的投影矩阵为
 $$
 \begin{aligned}
-\boldsymbol{M}_{\text{persp}\rightarrow\text{ccv}}&=\boldsymbol{M}_{\text{ortho}\rightarrow\text{ccv}}\boldsymbol{M}_{\text{persp}\rightarrow\text{ortho}}\\
+\boldsymbol{M}_{\text{persp}\rightarrow\text{cvv}}&=\boldsymbol{M}_{\text{ortho}\rightarrow\text{cvv}}\boldsymbol{M}_{\text{persp}\rightarrow\text{ortho}}\\
 &=\begin{bmatrix}
 \frac{2n}{w}&0&0&0\\
 0&\frac{2n}{h}&0&0\\
@@ -179,7 +179,7 @@ $$
 
 将这些值带入上面的公式，可以得到
 $$
-\boldsymbol{M}_{\text{persp}\rightarrow\text{ccv}}=\begin{bmatrix}
+\boldsymbol{M}_{\text{persp}\rightarrow\text{cvv}}=\begin{bmatrix}
 \frac{-1}{\text{aspect}.\tan(fov/2)}&0&0&0\\
 0&\frac{-1}{\tan(fov/2)}&0&0\\
 0&0&-\frac{near+far}{near-far}&\frac{-2near.far}{near-far}\\
@@ -195,10 +195,19 @@ $$
 \end{aligned}$$
 可知$k\boldsymbol{M}$在针对空间点转换矩阵中等同于$\boldsymbol{M}$，所以为了表达方便，经常将上面得到的这个矩阵乘以-1，得到
 $$
-\boldsymbol{M}_{\text{persp}\rightarrow\text{ccv}}=\begin{bmatrix}
-\frac{1}{\text{aspect}.\tan(fov/2)}&0&0&0\\
+\boldsymbol{M}_{\text{persp}\rightarrow\text{cvv}}=\begin{bmatrix}
+\frac{1}{\text{aspect}\cdot\tan(fov/2)}&0&0&0\\
 0&\frac{1}{\tan(fov/2)}&0&0\\
-0&0&\frac{near+far}{near-far}&\frac{2near.far}{near-far}\\
+0&0&\frac{near+far}{near-far}&\frac{2near\cdot far}{near-far}\\
+0&0&-1&0
+\end{bmatrix}
+$$
+有时候也会使用Zero-To-One的CVV坐标，也就是z轴是从0到1，这种情况下的转换矩阵为:
+$$
+\boldsymbol{M}_{\text{persp}\rightarrow\text{cvv}}=\begin{bmatrix}
+\frac{1}{\text{aspect}\cdot\tan(fov/2)}&0&0&0\\
+0&\frac{1}{\tan(fov/2)}&0&0\\
+0&0&\frac{far}{near-far}&\frac{near\cdot far}{near-far}\\
 0&0&-1&0
 \end{bmatrix}
 $$
@@ -236,7 +245,7 @@ $$\begin{split}
 ### 11.2 求解过程
 相比透视投影，正交投影只需要将一个立方体形状的摄影范围最终映射到标准设备坐标系(NDC)下的一个标准立方体(Cuboid)即可
 $$\begin{split}
-\boldsymbol{M}_{\text{ortho}\rightarrow\text{ccv}}&=\begin{bmatrix}
+\boldsymbol{M}_{\text{ortho}\rightarrow\text{cvv}}&=\begin{bmatrix}
 1&0&0&0\\
 0&1&0&0\\
 0&0&-1&0\\
@@ -268,7 +277,7 @@ $$\begin{split}
  * 下侧裁剪面坐标 $bottom=t$
 带入上面的公式可以得到
 $$
-\boldsymbol{M}_{\text{ortho}\rightarrow\text{ccv}}=\begin{bmatrix}
+\boldsymbol{M}_{\text{ortho}\rightarrow\text{cvv}}=\begin{bmatrix}
 \frac{2}{right-left}&0&0&\frac{left+right}{left-right}\\
 0&\frac{2}{top-bottom}&0&\frac{bottom+top}{bottom-top}\\
 0&0&\frac{2}{near-far}&\frac{near+far}{near-far}\\
