@@ -107,6 +107,11 @@ $$
 $$
 \vec{u}\cdot\vec{v}=u_xv_x+u_yv_y+u_zv_z
 $$
+对于两个二维矢量$\vec{u}, \vec{v}$，定义它们的点积为
+$$
+\vec{u}\cdot\vec{v}=u_xv_x+u_yv_y
+$$
+
 
 #### 2.4.2 点积的几何意义
 
@@ -151,6 +156,10 @@ b_x & b_y & b_z
 &=(a_yb_z-a_zb_y)\vec{\boldsymbol{i}}+(a_zb_x-a_xb_z)\vec{\boldsymbol{j}}+(a_xb_y-a_yb_x)\vec{\boldsymbol{k}}
 \end{aligned}
 $$
+对于两个二维矢量$\vec{a}, \vec{b}$，他们的叉积可以视作两个$z$分量为0的三位矢量的叉积
+$$
+\vec{\boldsymbol a}\times\vec{\boldsymbol b}=(a_xb_y-a_yb_x)\vec{\boldsymbol{k}}
+$$
 #### 2.5.2 叉积的几何意义
 在三维几何中，向量a和向量b的叉乘结果是一个向量，更为熟知的叫法是法向量，该向量垂直于a和b向量构成的平面。
 
@@ -160,7 +169,10 @@ $$
 $$
 \vec{\boldsymbol u}\times\vec{\boldsymbol v}=\|\vec{\boldsymbol u}\|\|\vec{\boldsymbol v}\|\sin(\theta)\vec{\boldsymbol n}
 $$
-向量a和向量b的叉积还可以视作以$\vec{a}$和$\vec{b}$为边的平行四边形的面积
+向量a和向量b的叉积还可以视作以$\vec{a}$和$\vec{b}$为边的平行四边形的面积，所以可以用叉积来计算一个三角形的面积，比如一个三角形的三个顶点分别是$A(x_1,y_1), B(x_2,y_2), C(x_3,y_3)$，那么这个三角形的面积为
+$$
+S=\frac{1}{2}\|\vec{AB}\times\vec{AC}\|=\frac{1}{2}|(x_2−x_1)(y_3−y_1)−(y_2−y_1)(x_3−x_1)|
+$$
 
 #### 2.5.3 基本运算规则
 - $\vec{a}\times\vec{b}=-\vec{b}\times\vec{a}$
