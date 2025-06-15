@@ -200,7 +200,7 @@ $$
 0&\frac{1}{\tan(fov/2)}&0&0\\
 0&0&\frac{near+far}{near-far}&\frac{2near\cdot far}{near-far}\\
 0&0&-1&0
-\end{bmatrix}
+\end{bmatrix}\tag{10.2.3.1}
 $$
 有时候也会使用Zero-To-One的CVV坐标，也就是z轴是从0到1，这种情况下的转换矩阵为:
 $$
@@ -209,7 +209,7 @@ $$
 0&\frac{1}{\tan(fov/2)}&0&0\\
 0&0&\frac{far}{near-far}&\frac{near\cdot far}{near-far}\\
 0&0&-1&0
-\end{bmatrix}
+\end{bmatrix}\tag{10.2.3.2}
 $$
 #### 10.2.4 深度插值
 

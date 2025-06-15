@@ -105,6 +105,13 @@ module.exports = [
 						]
 					},
 					{
+						text: '光栅化',
+						collapsible: true,
+						children: [
+							{text: '基础', link: '/note/graphics/rasterization/raster01'}
+						]
+					},
+					{
 						text: '光照模型',
 						collapsible: true,
 						children: [

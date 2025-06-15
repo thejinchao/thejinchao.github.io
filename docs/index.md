@@ -40,6 +40,7 @@
    * [智能扑克](/note/cryptography/mental_poker.md)
  * 图形学
    * [数学基础](/note/graphics/math/)
+   * [光栅化](/note/graphics/rasterization/)
    * [光照模型](/note/graphics/illumination_model/)
    * [环境光渲染](/note/graphics/image_based_lighting/)
  * 编程语言
