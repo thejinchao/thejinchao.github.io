@@ -19,14 +19,15 @@
 
 ![](./ccw_and_cw.svg )
 
-可以使用叉积来判断三个点的顺序是逆时针还是顺时针，如果$\overrightarrow{P_1P_2}\times\overrightarrow{P_2P_3}>0$，表示是逆时针，如果小于零则是顺时针，也就是$
+可以使用叉积来判断三个点的顺序是逆时针还是顺时针，如果$\vec{P_1P_2}\times\vec{P_2P_3}>0$，表示是逆时针，如果小于零则是顺时针，也就是$
 (x_2-x_1)(y_3-y_2)-(y_2-y_1)(x_3-x_2)$是否大于$0$，在一般情况下，都是使用逆时针。
 
 ### 2.2 面积
 根据[叉积的几何意义](../math/math_01.html#_2-5-2-%E5%8F%89%E7%A7%AF%E7%9A%84%E5%87%A0%E4%BD%95%E6%84%8F%E4%B9%89)，三角形面积同样可以利用叉积计算
-$$
-S_{\triangle}=\frac{1}{2}\|\vec{AB}\times\vec{AC}\|=\frac{1}{2}|(x_2−x_1)(y_3−y_1)−(y_2−y_1)(x_3−x_1)|
-$$
+$$\begin{aligned}
+S_{\triangle}&=\frac{1}{2}\|\vec{AB}\times\vec{AC}\|\\
+&=\frac{1}{2}|(x_2−x_1)(y_3−y_1)−(y_2−y_1)(x_3−x_1)|
+\end{aligned}$$
 
 ### 2.3 重心坐标
 给定三角形的三点坐标$A, B, C$，该平面内一点$P$可以写成这三点坐标的线性组合形式，即
@@ -80,7 +81,8 @@ $$
 代入2.4.1可以得到
 $$
 \begin{aligned}
-\begin{bmatrix}P'w_p\\w_p\end{bmatrix}=M\begin{bmatrix}P\\1\end{bmatrix}&=M\left(\alpha\begin{bmatrix}A\\1\end{bmatrix}+\beta\begin{bmatrix}B\\1\end{bmatrix}+\gamma\begin{bmatrix}C\\1\end{bmatrix}\right)\\
+\begin{bmatrix}P'w_p\\w_p\end{bmatrix}&=M\begin{bmatrix}P\\1\end{bmatrix}\\
+&=M\left(\alpha\begin{bmatrix}A\\1\end{bmatrix}+\beta\begin{bmatrix}B\\1\end{bmatrix}+\gamma\begin{bmatrix}C\\1\end{bmatrix}\right)\\
 &=\alpha M\begin{bmatrix}A\\1\end{bmatrix}+\beta M\begin{bmatrix}B\\1\end{bmatrix}+\gamma M\begin{bmatrix}C\\1\end{bmatrix}\\
 &=\alpha\begin{bmatrix}A'w_a\\w_a\end{bmatrix}+\beta\begin{bmatrix}B'w_b\\w_b\end{bmatrix}+\gamma\begin{bmatrix}C'w_c\\w_c\end{bmatrix}\\
 &=\begin{bmatrix}\alpha A'w_a+\beta B'w_b+\gamma C'w_c\\ \alpha w_a+\beta w_b+\gamma w_c\end{bmatrix}
