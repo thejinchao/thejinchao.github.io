@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="160mm"
+   height="60mm"
+   viewBox="0 0 160 60"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="edge_function3.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="2.1683361"
+     inkscape:cx="313.14333"
+     inkscape:cy="102.61324"
+     inkscape:window-width="2560"
+     inkscape:window-height="1494"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       id="grid1"
+       units="mm"
+       originx="0"
+       originy="0"
+       spacingx="0.99999999"
+       spacingy="0.99999997"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="true"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="marker33"
+       refX="6"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="2"
+       markerHeight="2"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path33" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker32"
+       refX="6"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path32" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker31"
+       refX="6"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path31" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker30"
+       refX="6"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="2"
+       markerHeight="2"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path30" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker28"
+       refX="6"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path28" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker20"
+       refX="6"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="2"
+       markerHeight="2"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path20" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker15"
+       refX="6"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="2"
+       markerHeight="2"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path15" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker13"
+       refX="6"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="2"
+       markerHeight="2"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path13" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker11"
+       refX="6"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path11" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker9"
+       refX="6"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="2"
+       markerHeight="2"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path9" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker6"
+       refX="6"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path6" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="ConcaveTriangle"
+       refX="6"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path7" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#96e600;fill-opacity:0.539405;stroke:none;stroke-width:0.0912861"
+       d="M 18.802266,5.5947237 10.176813,40.096537 37.778264,48.721989 Z"
+       id="path1" />
+    <path
+       style="fill:#96e600;fill-opacity:0.539405;stroke:#000000;stroke-width:0.45643;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker6)"
+       d="M 18.802266,5.5947237 10.176813,40.096537"
+       id="path2" />
+    <path
+       style="fill:#96e600;fill-opacity:0.539405;stroke:#000000;stroke-width:0.45643;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
+       d="m 10.176813,40.096537 27.601451,8.625452"
+       id="path3" />
+    <path
+       style="fill:#96e600;fill-opacity:0.539405;stroke:#000000;stroke-width:0.228216;stroke-dasharray:0.684647, 0.684647;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker9)"
+       d="M 18.802266,5.5947237 37.778264,48.721989"
+       id="path4" />
+    <path
+       style="fill:#96e600;fill-opacity:0.539405;stroke:none;stroke-width:0.228216;stroke-dasharray:0.684645, 0.684645;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 46.403719,48.721989 70.554986,5.5947237 77.455349,40.096537 Z"
+       id="path5" />
+    <path
+       style="fill:#96e600;fill-opacity:0.539405;stroke:#000000;stroke-width:0.45643;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker11)"
+       d="M 70.554986,5.5947237 46.403719,48.721989"
+       id="path10" />
+    <path
+       style="fill:#96e600;fill-opacity:0.539405;stroke:#000000;stroke-width:0.228216;stroke-dasharray:0.684645, 0.684645;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker13)"
+       d="M 77.455349,40.096537 70.554986,5.5947237"
+       id="path12" />
+    <path
+       style="fill:#96e600;fill-opacity:0.539405;stroke:#000000;stroke-width:0.228216;stroke-dasharray:0.684645, 0.684645;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker15)"
+       d="m 46.403719,48.721989 31.05163,-8.625452"
+       id="path14" />
+    <path
+       style="fill:#96e600;fill-opacity:0.539405;stroke:none;stroke-width:0.45643;stroke-dasharray:0.684645, 0.684645;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 87.805895,5.5947248 V 48.721991 h 25.876365 z"
+       id="path16" />
+    <path
+       style="fill:#96e600;fill-opacity:0.539405;stroke:#000000;stroke-width:0.45643;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker28)"
+       d="M 87.805895,5.5947248 V 48.721991"
+       id="path17" />
+    <path
+       style="fill:#96e600;fill-opacity:0.539405;stroke:#000000;stroke-width:0.228216;stroke-dasharray:0.684645, 0.684645;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker20)"
+       d="M 87.805895,5.5947248 113.68226,48.721991"
+       id="path19" />
+    <path
+       style="fill:#96e600;fill-opacity:0.539405;stroke:none;stroke-width:0.228216;stroke-dasharray:0.684645, 0.684645;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 112.40425,5.4577964 h 25.87636 V 48.585061 Z"
+       id="path21" />
+    <path
+       style="fill:#96e600;fill-opacity:0.539405;stroke:#000000;stroke-width:0.45643;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker32)"
+       d="M 138.28061,48.585061 112.40425,5.4577964"
+       id="path22" />
+    <path
+       style="fill:#96e600;fill-opacity:0.539405;stroke:#000000;stroke-width:0.228216;stroke-dasharray:0.684645, 0.684645;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker33)"
+       d="M 138.28061,5.4577964 V 48.585061"
+       id="path24" />
+    <path
+       style="fill:#96e600;fill-opacity:0.539405;stroke:#000000;stroke-width:0.45643;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker31)"
+       d="m 112.40425,5.4577964 h 25.87636"
+       id="path26" />
+    <path
+       style="fill:#96e600;fill-opacity:0.539405;stroke:#000000;stroke-width:0.228216;stroke-dasharray:0.684645, 0.684645;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker30)"
+       d="M 113.68225,48.721989 H 87.805895"
+       id="path29" />
+  </g>
+</svg>
