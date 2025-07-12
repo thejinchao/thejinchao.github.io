@@ -53,7 +53,7 @@ $$
 e(x,y)=ax+by+c\tag{4.4.1}
 $$
 结合上面对于是否在三角形内以及三角形边上的判断，最终判断某点是否属于三角形，使用下面的函数判断该点是否在三角形三个边的内部
-```cpp
+```cpp :no-line-numbers
 bool Inside(a,b,c, x, y) 
 {
 	bool is_top_left = (a!=0)?(a>0):(b<0);
