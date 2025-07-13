@@ -109,7 +109,8 @@ module.exports = [
 						collapsible: true,
 						children: [
 							{text: '基础', link: '/note/graphics/rasterization/raster01'},
-							{text: '边界判定', link: '/note/graphics/rasterization/raster02'}
+							{text: '边界判定', link: '/note/graphics/rasterization/raster02'},
+							{text: '像素遍历', link: '/note/graphics/rasterization/raster03'}
 						]
 					},
 					{
