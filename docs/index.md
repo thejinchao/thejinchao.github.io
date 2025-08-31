@@ -1,4 +1,8 @@
-## 我的文章
+---
+prevLink: false
+nextLink: false
+---
+## ::book vertical-align=middle:: 我的文章
  * 从抛币协议到智能合约
    * [Part1](/blog/2025/02/MentalPoker01.md), [Part2](/blog/2025/02/MentalPoker02.md)
  * JPEG算法解密 
@@ -16,7 +20,7 @@
  * 匀速贝塞尔曲线运动实现
     * [Part1](/blog/2025/03/BezierLine01.md), [Part2](/blog/2025/03/BezierLine02.md)
 
-## 开源项目
+## ::diagram-project vertical-align=middle:: 开源项目
  * [Turbolink](https://github.com/thejinchao/turbolink)  
  TurboLink 是一个Unreal Engine插件, 能够在Unreal Engine 中通过C++或者蓝图使用Google gRPC.
  * [TinyEncrypt](https://github.com/thejinchao/TinyEncrypt)  
@@ -28,7 +32,7 @@
  * [Cyclone](https://github.com/thejinchao/cyclone)  
  一套轻量级的跨平台网络库
 
-## 个人笔记
+## ::lightbulb vertical-align=middle:: 个人笔记
  * 数学相关
    * [常用数学符号](/note/math/symbol.md)
    * [群](/note/math//group.md)

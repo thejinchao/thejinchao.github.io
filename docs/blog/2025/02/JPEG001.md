@@ -63,17 +63,17 @@ YCbCr模型广泛应用在图片和视频的压缩传输中，比如你可以留
 <tr>
 <td colspan="5">
 
-![](/images/2014/08/jpeg_15.jpg)
+<center><img src="/images/2014/08/jpeg_15.jpg" width="150" height="112" /></center>
 
 </td>
 </tr>
 <tr>
 <td>
-<figure style="margin: 5px;"><img src="/images/2014/08/jpeg_16.png" ><figcaption >Y</figcaption></figure></td>
+<figure style="margin: 5px;"><img src="/images/2014/08/jpeg_16.png" width="150" height="112"><figcaption >Y</figcaption></figure></td>
 <td ></td>
-<td><figure style="margin: 5px;"><img src="/images/2014/08/jpeg_17.png" ><figcaption >Cb</figcaption></figure></td>
+<td><figure style="margin: 5px;"><img src="/images/2014/08/jpeg_17.png" width="150" height="112"><figcaption >Cb</figcaption></figure></td>
 <td ></td>
-<td><figure style="margin: 5px;"><img src="/images/2014/08/jpeg_18.png" ><figcaption >Cr</figcaption></figure></td>
+<td><figure style="margin: 5px;"><img src="/images/2014/08/jpeg_18.png" width="150" height="112"><figcaption >Cr</figcaption></figure></td>
 </tr>
 </tbody>
 </table>

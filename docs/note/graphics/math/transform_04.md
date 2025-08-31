@@ -245,7 +245,8 @@ $$\begin{split}
 ### 11.2 求解过程
 相比透视投影，正交投影只需要将一个立方体形状的摄影范围最终映射到标准设备坐标系(NDC)下的一个标准立方体(Cuboid)即可
 $$\begin{split}
-\boldsymbol{M}_{\text{ortho}\rightarrow\text{cvv}}&=\begin{bmatrix}
+&\quad\boldsymbol{M}_{\text{ortho}\rightarrow\text{cvv}}\\
+&=\begin{bmatrix}
 1&0&0&0\\
 0&1&0&0\\
 0&0&-1&0\\

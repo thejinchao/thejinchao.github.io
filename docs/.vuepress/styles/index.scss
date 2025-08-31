@@ -1,3 +1,4 @@
+// place your custom styles here
 :root {
     --code-c-text: #1f1f1f;
     --code-c-bg: #f8f8f8;
@@ -9,18 +10,19 @@ table.gridtable {
     border-collapse: collapse;
     border: 1px solid #0a0a0a;
     width: 100%;
+    font-size: small;
 }
 
 table.gridtable th {
     background-color: #cacaca;
     border: 1px solid #3f3f3f;
     color: #131313;
-    padding: 0px;
+    padding: 2px;
 }
 
 table.gridtable td {
     border: 1px solid #3f3f3f;
-    padding: 0px;
+    padding: 2px;
 }
 
 table.invisibletable {

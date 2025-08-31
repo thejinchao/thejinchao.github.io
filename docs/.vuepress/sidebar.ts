@@ -1,8 +1,18 @@
-module.exports = [
+import { sidebar } from "vuepress-theme-hope";
+
+export default sidebar({
+  "/": [
+	{
+		text: "主页",
+		icon: "house",
+		link: "/",
+	},
 	{
 		text: '我的文章',
 		prefix: '/blog/',
 		collapsible: true,
+		icon: 'book',
+		expanded: true,
 		children: [
 			{ 
 				text: '从抛币协议到智能合约', 
@@ -54,6 +64,7 @@ module.exports = [
 	{
 		text: '开源项目',
 		collapsible: true,
+		icon: "diagram-project",
 		children: [
 			{text: "TurboLink", link: 'https://github.com/thejinchao/turbolink' },
 			{text: "TinyEncrypt", link: 'https://github.com/thejinchao/TinyEncrypt' },
@@ -65,6 +76,7 @@ module.exports = [
 	{
 		text: '学习笔记',
 		collapsible: true,
+		icon: "lightbulb",
 		children: [
 			{
 				text: '数学相关',
@@ -153,5 +165,6 @@ module.exports = [
 				]
 			}
 		]
-	}
-]
+	},
+  ],
+});

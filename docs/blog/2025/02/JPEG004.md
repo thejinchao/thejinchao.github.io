@@ -1,6 +1,12 @@
 ---
 title: "JPEG算法解密（四）"
 tags:  压缩 图像 程序 算法
+prev:
+  text: JPEG算法解密（三）
+  link: JPEG003.md
+next:
+  text: JPEG算法解密（五）
+  link: JPEG005.md
 ---
 # JPEG算法解密（四）
 

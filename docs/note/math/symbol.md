@@ -12,7 +12,7 @@
 | $\#S$ |\\#| 集合$S$中的元素数目（比如$\#\emptyset=0$\) |
 | $x\in S, x\notin S$ | \in, \notin | 元素$x$属于（不属于）集合$S$ |
 | $x\in(a,b),x\in[a,b]$| |元素$x$属于开区间$(a,b)$，元素$x$属于闭区间$[a,b]$ |
-| $\mathbb{N,Z,Q,R,C}$|\mathbb{N,Z,Q,R,C}|自然数集，整数集，有理数集，实数集，复数集|
+| $\mathbb{N},\mathbb{Z},\mathbb{Q},\mathbb{R},\mathbb{C}$|\mathbb|自然数集，整数集，有理数集，实数集，复数集|
 | $\mathbb{Z}_n$| |模$n$整数群|
 | $\mathbb{Z}_n^{*}$| |模$n$整数乘法群|
 | $a\mod{b}$| \mod | 模运算：$a$被$b$除所得余数|

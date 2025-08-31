@@ -29,7 +29,7 @@ S_{\triangle}&=\frac{1}{2}\|\vec{AB}\times\vec{AC}\|\\
 &=\frac{1}{2}|(x_2−x_1)(y_3−y_1)−(y_2−y_1)(x_3−x_1)|
 \end{aligned}$$
 
-### 2.3 重心坐标
+### 2.3 重心坐标(Barycentric Coordinates)
 给定三角形的三点坐标$A, B, C$，该平面内一点$P$可以写成这三点坐标的线性组合形式，即
 $$
 P=\alpha A+\beta B+\gamma C
