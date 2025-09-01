@@ -1,3 +1,4 @@
+
 # My Blog and Notebook
 
 Visit: [https://thejinchao.github.io](https://thejinchao.github.io)
@@ -9,27 +10,20 @@ Visit: [https://thejinchao.github.io](https://thejinchao.github.io)
 npm install --global yarn
 yarn --version
 ```
+3. 安装pnpm [https://pnpm.io/installation](https://pnpm.io/installation)
+
 ## 安装必须组件
 
-### 安装 vuepress
 ```
-npm install -D vuepress@next
-```
-### 安装打包工具和主题
-```
-npm install -D @vuepress/bundler-vite@next @vuepress/theme-default@next
-```
-### 安装sass-embedded
-```
-yarn add -D sass-embedded
-```
-#### Add math support to your VuePress site
-```
-npm i -D @vuepress/plugin-markdown-math@next
-npm i -D mathjax-full
-```
-### Add additional features to your markdown images
-```
-npm i -D @vuepress/plugin-markdown-image@next
+pnpm install
 ```
 
+## 开发模式
+```
+pnpm docs:dev
+```
+
+## 打包
+```
+pnpm docs:build
+```
