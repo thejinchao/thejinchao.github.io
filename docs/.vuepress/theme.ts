@@ -18,7 +18,8 @@ export default hopeTheme({
   editLink: false,
   prevLink: false,
   nextLink: false,
-
+  contributors: false,
+  lastUpdated: false,
   docsDir: "docs",
 
   // 导航栏
