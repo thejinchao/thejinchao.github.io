@@ -95,7 +95,7 @@ $$
 $$
 
 ### 6.2 坐标系变换
-一个物体在不同坐标系中的变换，比如常用的局部坐标系到世界坐标系的变换
+一个物体在不同坐标系中的变换，比如常用的世界坐标系到局部坐标系的变换
 
 ![](./transform_axis.svg)
 
@@ -122,7 +122,13 @@ $$
 
 ![](./transform_axis_roate.svg)
 
-这个矩阵并不好直接写出，但是它的逆矩阵就比较容易，也就是能够将写出
+这个矩阵并不好直接写出，但是它的逆矩阵$\boldsymbol{R}^{-1}$就比较容易，也就是能够满足下面的变换
+$$\begin{split}
+\boldsymbol{R}^{-1}[1,0,0,0]^T&=[i_x',i_y',i_z',0]^T\\
+\boldsymbol{R}^{-1}[0,1,0,0]^T&=[j_x',j_y',j_z',0]^T\\
+\boldsymbol{R}^{-1}[0,0,1,0]^T&=[k_x',k_y',k_z',0]^T
+\end{split}$$
+容易得到
 $$
 \boldsymbol{R}^{-1}=\begin{bmatrix}
 i_x'&j_x'&k_x'&0 \\
@@ -131,12 +137,6 @@ i_z'&j_z'&k_z'&0 \\
 0&0&0&1
 \end{bmatrix}
 $$
-这个矩阵满足
-$$\begin{split}
-\boldsymbol{R}^{-1}[1,0,0,0]^T&=[i_x',i_y',i_z',0]^T\\
-\boldsymbol{R}^{-1}[0,1,0,0]^T&=[j_x',j_y',j_z',0]^T\\
-\boldsymbol{R}^{-1}[0,0,1,0]^T&=[k_x',k_y',k_z',0]^T
-\end{split}$$
 由于这是一个正交矩阵，所以
 $$
 \boldsymbol{R}=(\boldsymbol{R}^{-1})^T=\begin{bmatrix}

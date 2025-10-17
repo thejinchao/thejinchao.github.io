@@ -25,7 +25,7 @@ $$
 $$
 I_\mathrm{ambient}=L_aK_a
 $$
-其中$L_a$是环境光亮度，$I_a$是环境光反射系数$0\le K_a\le 1$
+其中$L_a$是环境光亮度，$K_a$是环境光反射系数$0\le K_a\le 1$
 
 ### 1.2.2 **漫反射（Diffuse Reflection）**
 
