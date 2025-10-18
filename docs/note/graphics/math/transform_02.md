@@ -100,7 +100,7 @@ $$
 ![](./transform_axis.svg)
 
 设新坐标系x'y'z'的原点在原坐标系的$\vec{\boldsymbol{O}}(x_o,y_o,z_o)$处，新坐标系的单位坐标矢量在原坐标系中的矢量为$\vec{\boldsymbol{i}'},\vec{\boldsymbol{j}'},\vec{\boldsymbol{k}'}$，那么将物体的坐标从原先坐标系xyz转换到新坐标系x'y'z'的转换可以分为两部分
-#### 6.2.1 平移矩阵
+#### 6.2.1 平移
 构建平移矩阵，目的是将物体在原坐标系中的坐标做一个偏移，这个偏移可以视作将物体和新坐标系一起移动，将新坐标系的原点$\boldsymbol{O}$挪到原坐标系的原点处，可以得到
 
 ![](./transform_axis_move.svg)
@@ -113,7 +113,7 @@ $$
 0&0&0&1
 \end{bmatrix}
 $$
-#### 6.2.2 构建旋转矩阵
+#### 6.2.2 旋转
 接下来要构建一个旋转矩阵$\boldsymbol{R}$，目的是将片以后的物体坐标和新坐标系旋转到和原坐标系一致，也就是经过这个矩阵，可以将新坐标系中的$x'$轴旋转到原坐标系的$x$轴，也就是:
 $$
 \boldsymbol{R}\begin{bmatrix}i_x'\\i_y'\\i_z'\\0\end{bmatrix}=\begin{bmatrix}1\\0\\0\\0\end{bmatrix}
@@ -158,7 +158,8 @@ i_x'&i_y'&i_z'&-\vec{O}\cdot\vec{i'} \\
 j_x'&j_y'&j_z'&-\vec{O}\cdot\vec{j'} \\
 k_x'&k_y'&k_z'&-\vec{O}\cdot\vec{k'} \\
 0&0&0&1
-\end{bmatrix}\end{split}
+\end{bmatrix}
+\end{split}\tag{6.2.1}
 $$
 验证
 $$\begin{split}
@@ -167,3 +168,13 @@ $$\begin{split}
 \boldsymbol{RT}[k_x',k_y',k_z',0]^T&=[0,0,1,0]^T\\
 \boldsymbol{RT}[x_0,y_0,z_0,1]^T&=[0,0,0,1]^T
 \end{split}$$
+#### 6.2.4 不考虑位移
+如果不考虑位移，只考虑旋转，那么这个矩阵可以简化为一个3X3的矩阵，如下
+$$\begin{split}
+\boldsymbol{R}=\begin{bmatrix}
+i_x'&i_y'&i_z' \\
+j_x'&j_y'&j_z' \\
+k_x'&k_y'&k_z' \\
+\end{bmatrix}
+\end{split}\tag{6.2.2}
+$$

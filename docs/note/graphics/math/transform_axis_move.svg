@@ -23,17 +23,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.8809339"
-     inkscape:cx="7.7089365"
-     inkscape:cy="243.49606"
+     inkscape:zoom="3.7618678"
+     inkscape:cx="91.709762"
+     inkscape:cy="266.22413"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      units="px"
      inkscape:window-width="2560"
-     inkscape:window-height="1476"
-     inkscape:window-x="-12"
-     inkscape:window-y="-12"
+     inkscape:window-height="1494"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
      inkscape:window-maximized="1"
      inkscape:pagecheckerboard="0"
      inkscape:showpageshadow="2"
@@ -49,6 +49,25 @@
   </sodipodi:namedview>
   <defs
      id="defs2">
+    <marker
+       style="overflow:visible"
+       id="marker2"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="2"
+       markerHeight="2"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path2" />
+    </marker>
     <marker
        inkscape:isstock="true"
        style="overflow:visible;"
@@ -101,8 +120,8 @@
        inkscape:stockid="Arrow1Lend"
        inkscape:collect="always"
        viewBox="0 0 17.77385393 10.15648796"
-       markerWidth="17.77385393"
-       markerHeight="10.15648796"
+       markerWidth="17.7738533"
+       markerHeight="10.1564876"
        preserveAspectRatio="xMidYMid">
       <path
          transform="scale(0.8) rotate(180) translate(12.5,0)"
@@ -483,7 +502,7 @@
        id="path4499-5"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:#ff9955;fill-opacity:0.993671;stroke:#7b7a7b;stroke-width:0.5;stroke-dasharray:2, 0.5;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker4830)"
+       style="fill:#ff9955;fill-opacity:0.993671;stroke:#ff0000;stroke-width:0.5;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker2)"
        d="m 215.08141,357.17763 -81.23168,51.87104"
        id="path1"
        sodipodi:nodetypes="cc" />
