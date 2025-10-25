@@ -71,10 +71,10 @@ $$
 I_\mathrm{BlinnPhong}=I_\mathrm{ambient}+\sum({I_\mathrm{diffuse}+I_\mathrm{specular}})
 $$
 其中环境光和漫反射和Phong相同
-$$
+$$\begin{split}
 I_\mathrm{diffuse}=(\vec{L}\cdot\vec{N})L_dK_d \\
 I_\mathrm{specular}=(\vec{\mathrm{R}}\cdot\vec{\mathrm{V}})^\alpha L_sK_s
-$$
+\end{split}$$
 
 高光部分使用$\vec{\mathrm{N}}\cdot\vec{\mathrm{H}}$代替$\vec{\mathrm{R}}\cdot\vec{\mathrm{V}}$
 $$

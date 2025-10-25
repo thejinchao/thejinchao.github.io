@@ -168,7 +168,7 @@ $$\begin{split}
 \boldsymbol{RT}[k_x',k_y',k_z',0]^T&=[0,0,1,0]^T\\
 \boldsymbol{RT}[x_0,y_0,z_0,1]^T&=[0,0,0,1]^T
 \end{split}$$
-#### 6.2.4 不考虑位移
+#### 6.2.4 只考虑旋转的简化形式
 如果不考虑位移，只考虑旋转，那么这个矩阵可以简化为一个3X3的矩阵，如下
 $$\begin{split}
 \boldsymbol{R}=\begin{bmatrix}
@@ -178,3 +178,28 @@ k_x'&k_y'&k_z' \\
 \end{bmatrix}
 \end{split}\tag{6.2.2}
 $$
+由于$R$是一个正交矩阵，所以
+$$
+\boldsymbol{R}^{-1}=\boldsymbol{R}^T
+$$
+在进行物体表面的逐像素光照计算时，经常会用到这种转换，比如物体表面上某点的切线$\boldsymbol{T}$,副法线为$\boldsymbol{B}$和法线$\boldsymbol{N}$组成一个正交坐标系，通常称为TBN空间。
+
+![](./NTBFromUVs.png)
+
+如果从该点指向光源的世界坐标向量为$\vec{L}$，那么转换到TBN空间$\vec{L}'$，使用如下矩阵
+$$
+\vec{L}'=\begin{bmatrix}
+T_x&T_y&T_z \\
+B_x&B_y&B_z \\
+N_x&N_y&N_z \\
+\end{bmatrix}\vec{L}
+$$
+
+相反方向转换，比如法线贴图中记录的像素法线数据就是TBN空间中的向量方向$\vec{n}'$，读取之后如果需要将其转换到世界坐标$\vec{n}$，使用如下矩阵
+$$
+\vec{n}=\begin{bmatrix}
+T_x&B_x&N_x \\
+T_y&B_y&N_y \\
+T_z&B_z&N_z \\
+\end{bmatrix}\vec{n}'
+$$ 
