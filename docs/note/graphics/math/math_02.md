@@ -42,7 +42,7 @@ $$
 #### 3.3.2 举例
 $$\begin{split}
 \boldsymbol{AB}&=\begin{bmatrix}
--1&5&4\\3&2&1
+-1&5&-4\\3&2&1
 \end{bmatrix}\begin{bmatrix}
 2&1&0\\0&-2&1\\-1&2&3
 \end{bmatrix}\\ &= \begin{bmatrix}
