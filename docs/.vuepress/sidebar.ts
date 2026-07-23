@@ -77,6 +77,7 @@ export default sidebar({
 		text: '学习笔记',
 		collapsible: true,
 		icon: "lightbulb",
+		expanded: true,
 		children: [
 			{
 				text: '数学相关',
@@ -87,7 +88,8 @@ export default sidebar({
 					{text: '数论（一）', 		link: '/note/math/number_theory_1.md'},
 					{text: '数论（二）',		link: '/note/math/number_theory_2.md'},
 					{text: '数论（三）', 		link: '/note/math/number_theory_3.md'},
-					{text: '概率', 			link: '/note/math/probability.md'}
+					{text: '概率', 			link: '/note/math/probability.md'},
+					{text: '线性代数', 		link: '/note/math/linear_algebra.md'}
 				]
 			},
 			{

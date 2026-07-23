@@ -7,9 +7,48 @@
 ### 1.2 连续随机变量
 计算机中产生一个[0,1]之间的随机函数rand()，在不考虑浮点数精度时，就是一个连续的随机变量$X$
 
-## 2. 概率分布函数(CDF)
-
+## 2. 概率质量函数(PMF)
 ### 2.1 定义
+对于一个离散型的随机变量$X$，用概率质量函数描述其概率发生在某个特定值时的概率
+$$
+f_X(x)=P(X=x)
+$$
+### 2.2 举例
+例如一个质量均匀的六面体筛子，生成的随机数的PMF为
+$$
+f(n)=\frac{1}{6}, n\in\{1,2,3,4,5,6\}
+$$
+### 2.3 特性
+质量概率函数$f(x)$符合以下特性
+- $0 \leqslant f(x) \leqslant 1$
+- $\sum{f(x)}=1$
+
+## 3. 概率密度函数(PDF)
+### 3.1 定义
+对于连续性随机变量，用概率密度函数(Probability Density Function, PDF)描述其分布规律, 需要注意的时，概率密度函数$f_X(x)$**不是**描述随机变量$X=x$的概率，而是描述随机变量$X$出现在区间$[x,x+dx]$之间的概率为$f_X(x)dx$，所以PDF的取值是可能$>1$的
+
+### 3.2 特性
+- $f_X(x)=\dfrac{d}{dx}F_X(x)$
+- $f_X(x)\geqslant 0, \forall x\in X$
+- $\displaystyle P(a < x \leqslant b)=\int_a^{b}f_X(u)du$
+- $\displaystyle\int f_X(u)du=1$
+
+### 3.3 举例
+对于均匀分布在[a,b]之间的随机变量$U$，有
+$$
+f_U(x)=\begin{cases} 
+1/(b-a) & {a\leqslant  x \leqslant b} \\
+0 & {\text{otherwise}}
+\end{cases}
+$$
+正态分布
+$$
+f(x)=\dfrac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}, -\infty< x < +\infty
+$$
+
+## 4. 概率分布函数(CDF)
+
+### 4.1 定义
 衡量一个随机数的概率分布规律的两个重要函数，概率分布函数(cumulative distribution function)用来定义概率累计的结果
 $$
 F_X(x)=P(X\leqslant x)
@@ -37,33 +76,6 @@ $$
 - $F_X(x)$为单调上升的右连续函数
 - $\displaystyle\lim_{x \to -\infty}{ F(x)=0} , \lim_{x \to +\infty}{ F(x)=1}$
 - $P(a < x\leqslant b)=F(b)-F(a)$
-
-
-## 3. 概率密度函数(PDF)
-### 3.1 定义
-对于连续性随机变量，其概率分布函数$F_X(x)$可以表达成函数$f_X(x)$的积分
-$$
-F_X(x)=\int_{-\infty}^{x}f_X(u)du
-$$
-称$f_X(x)$为随机变量$X$的概率密度函数，可以理解为随机变量$X$出现在区间$[x,x+dx]$之间的概率为$f_X(x)dx$
-### 3.2 特性
-- $f_X(x)=\dfrac{d}{dx}F_X(x)$
-- $f_X(x)\geqslant 0, \forall x\in \mathbb{R}$
-- $\displaystyle P(a < x \leqslant b)=\int_a^{b}f_X(u)du$
-- $\displaystyle\int_{-\infty}^{+\infty}f_X(u)du=1$
-
-### 3.3 举例
-对于均匀分布在[a,b]之间的随机变量$U$，有
-$$
-f_U(x)=\begin{cases} 
-1/(b-a) & {a\leqslant  x \leqslant b} \\
-0 & {\text{otherwise}}
-\end{cases}
-$$
-正态分布
-$$
-f(x)=\dfrac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}, -\infty< x < +\infty
-$$
 
 ## 4. 期望值
 ### 4.1 定义
